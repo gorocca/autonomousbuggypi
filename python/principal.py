@@ -1,0 +1,3 @@
+from controlMotor import *
+
+calibraMotor()
