@@ -1,3 +1,4 @@
 from controlMotor import *
 
-calibraMotor()
+m1 = controlMotor()
+m1.calibraMotor()
