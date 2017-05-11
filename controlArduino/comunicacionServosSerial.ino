@@ -4,7 +4,9 @@ Servo ESC;
 Servo servoMotor;
 char inChar;
 String string="";
+String verificacion="";
 int vel = 1500;
+bool leyendoInstruccion = false;
 
 //Configuracion de puerto serial y reservacion de variable string
 void setup() {
@@ -15,33 +17,48 @@ void setup() {
   delay(5000); //Esperar 5 segundos para hacer la activacion
   Serial.begin(9600);
   string.reserve(200);
+  Serial.println("Calibrado");
+  while(verificacion!="OK"){
+   while(Serial.available()>0){
+      inChar=Serial.read();
+      verificacion+=inChar;
+    }
+  }
+  verificacion="";
+  Serial.println("Verificado");
 }
 
 void loop(){
-  if (Serial.available()){
+  while (Serial.available()>0){
 //Lectura de caracteres   
    inChar = Serial.read();
 
-   if (inChar==','){
-    Serial.print("Aceleracion: ");
-    Serial.println(string);
-    cambiaAceleracion(string.toInt());
-    string="";
+   if(inChar=='[' && leyendoInstruccion == false){
+      leyendoInstruccion=true;
    }
+
+  else if (leyendoInstruccion){
+    if (inChar==','){
+      Serial.print("Aceleracion: ");
+      Serial.println(string);
+      cambiaAceleracion(string.toInt());
+      string="";
+    }
 //Imprime la variable con los caracteres acumulados hasta la ","   
-   else if (inChar=='|'){
-    Serial.print("Direccion: ");
-    Serial.println(string);
-    cambiaDireccion(string.toInt());
+    else if (inChar==']'){
+      Serial.print("Direccion: ");
+      Serial.println(string);
+      cambiaDireccion(string.toInt());
 //Borra la variable string para almacenar nuevos datos
-    string=""; 
+      string="";
+      leyendoInstruccion=false; 
    }
-   else{
-    //Suma de caracteres en variable string
-    string+=inChar;
-   }
+    else{
+      //Suma de caracteres en variable string
+      string+=inChar;
+      }
+    }
   }
-  
 }
 
 bool cambiaAceleracion(int aceleracion){
