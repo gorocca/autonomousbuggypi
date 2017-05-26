@@ -11,14 +11,14 @@
 \contentsline {section}{\numberline {2.2}Implementaci\IeC {\'o}n}{4}
 \contentsline {subsection}{\numberline {2.2.1}Tecnolog\IeC {\'\i }as empleadas}{4}
 \contentsline {subsection}{\numberline {2.2.2}Desarrollo}{5}
-\contentsline {section}{\numberline {2.3}Pruebas del sistema}{20}
-\contentsline {chapter}{\numberline {3}BLOQUE 3: PLANIFICACI\IeC {\'O}N DEL PROYECTO}{22}
-\contentsline {section}{\numberline {3.1}Planificaci\IeC {\'o}n temporal inicial}{22}
-\contentsline {section}{\numberline {3.2}Planificaci\IeC {\'o}n financiera inicial}{25}
-\contentsline {section}{\numberline {3.3}Planificaci\IeC {\'o}n temporal final (real)}{25}
-\contentsline {section}{\numberline {3.4}Planificaci\IeC {\'o}n financiera final}{25}
-\contentsline {section}{\numberline {3.5}Estudio de mercado}{26}
-\contentsline {subsection}{\numberline {3.5.1}Clientes potenciales}{26}
-\contentsline {subsection}{\numberline {3.5.2}Plan de comercializaci\IeC {\'o}n}{26}
-\contentsline {section}{Referencias}{29}
+\contentsline {section}{\numberline {2.3}Pruebas del sistema}{22}
+\contentsline {chapter}{\numberline {3}BLOQUE 3: PLANIFICACI\IeC {\'O}N DEL PROYECTO}{24}
+\contentsline {section}{\numberline {3.1}Planificaci\IeC {\'o}n temporal inicial}{24}
+\contentsline {section}{\numberline {3.2}Planificaci\IeC {\'o}n financiera inicial}{27}
+\contentsline {section}{\numberline {3.3}Planificaci\IeC {\'o}n temporal final (real)}{27}
+\contentsline {section}{\numberline {3.4}Planificaci\IeC {\'o}n financiera final}{27}
+\contentsline {section}{\numberline {3.5}Estudio de mercado}{28}
+\contentsline {subsection}{\numberline {3.5.1}Clientes potenciales}{28}
+\contentsline {subsection}{\numberline {3.5.2}Plan de comercializaci\IeC {\'o}n}{28}
+\contentsline {section}{Referencias}{31}
 \contentsfinish 
