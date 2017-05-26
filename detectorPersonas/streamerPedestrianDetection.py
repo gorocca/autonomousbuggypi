@@ -10,6 +10,9 @@ import argparse
 import urllib
 import imutils
 import cv2
+import socket
+import sys
+import time
 
 # construct the argument parse and parse the arguments
 #ap = argparse.ArgumentParser()
@@ -24,10 +27,21 @@ hog.setSVMDetector(cv2.HOGDescriptor_getDefaultPeopleDetector())
 #imagePaths = list(paths.list_images(args["images"]))
 #cam = cv2.VideoCapture(0)
 
-#for imagePath in imagePaths:   
+parado = True
 
+# Creando un socket TCP/IP
+sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 
-
+# Conecta el socket en el puerto cuando el servidor este escuchando
+server_address = ('192.168.0.1', 10000)
+print ( 'conectando a %s puerto %s' % server_address)
+conectado = False
+while not conectado:
+    try:
+        sock.connect(server_address)
+        conectado = True
+    except:
+        print ('conexion rechazada a %s puerto %s' % server_address)
 
 while True:
 
@@ -53,13 +67,23 @@ while True:
    for (x, y, w, h) in rects:
         cv2.rectangle(orig, (x, y), (x + w, y + h), (0, 0, 255), 2)
 
-   rects = np.array([[x, y, x + w, y + h] for (x, y, w, h) in rects])
-   pick = non_max_suppression(rects, probs=None, overlapThresh=0.65)
-   for (xA, yA, xB, yB) in pick:
-		cv2.rectangle(image, (xA, yA), (xB, yB), (0, 255, 0), 2)
-   print("[INFO] {}: {} original boxes, {} after suppression".format(
-		"Imagen", len(rects), len(pick)))
+   #rects = np.array([[x, y, x + w, y + h] for (x, y, w, h) in rects])
+   #pick = non_max_suppression(rects, probs=None, overlapThresh=0.65)
+   #for (xA, yA, xB, yB) in pick:
+   #		cv2.rectangle(image, (xA, yA), (xB, yB), (0, 255, 0), 2)
+   print("[INFO] {}: {} original boxes".format(
+		"Imagen", len(rects)))#, len(pick)))
+  
+   if len(rects)>0 and not parado:
+      print("Pedestrian detected, stopping car")
+      sock.send("[0,90]")
+      
+   elif parado:
+       sock.send("[18,90]")
+       
 
    cv2.imshow("Before NMS", orig)
-   cv2.imshow("After NMS", image)
-   cv2.waitKey(1)
+   #cv2.imshow("After NMS", image)
+   if cv2.waitKey(1) == 27:
+       sock.send("close")
+       break
