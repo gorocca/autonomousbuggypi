@@ -77,13 +77,16 @@ while True:
    if len(rects)>0 and not parado:
       print("Pedestrian detected, stopping car")
       sock.send("[0,90]")
+      parado = True
       
    elif parado:
        sock.send("[18,90]")
+       parado = False
        
 
    cv2.imshow("Before NMS", orig)
    #cv2.imshow("After NMS", image)
    if cv2.waitKey(1) == 27:
+       sock.send("[0,90]")
        sock.send("close")
        break
