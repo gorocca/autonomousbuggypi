@@ -1,0 +1,300 @@
+\begin{thebibliography}{}
+
+\bibitem [\protect \citeauthoryear {%
+DGT%
+}{%
+DGT%
+}{%
+{\protect \APACyear {2017}}%
+}]{%
+censoDGT}
+\APACinsertmetastar {%
+censoDGT}%
+\begin{APACrefauthors}%
+DGT.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2017}{}{}.
+\newblock
+\APACrefbtitle {Censo DGT.} {Censo dgt.}
+\newblock
+\APACaddressPublisher{}{Dirección General de Tráfico}.
+\newblock
+\begin{APACrefURL}
+  \url{http://www.dgt.es/es/seguridad-vial/estadisticas-e-indicadores/censo-conductores/}
+  \end{APACrefURL}
+\newblock
+\APACrefnote{fecha de consulta: 09 de Mayo de 2017}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Esteso%
+}{%
+Esteso%
+}{%
+{\protect \APACyear {2016}}%
+}]{%
+mjpg}
+\APACinsertmetastar {%
+mjpg}%
+\begin{APACrefauthors}%
+Esteso, M\BPBI P.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2016}{}{}.
+\newblock
+\APACrefbtitle {Video streaming live! con Raspberry Pi y Playstation Eye Toy.}
+  {Video streaming live! con raspberry pi y playstation eye toy.}
+\newblock
+\APACaddressPublisher{}{geekytheory}.
+\newblock
+\begin{APACrefURL}
+  \url{https://geekytheory.com/video-streaming-live-con-raspberrypi-y-playstation-eye/}
+  \end{APACrefURL}
+\newblock
+\APACrefnote{fecha de consulta: 7 de Febrero de 2017}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Fritzing%
+}{%
+Fritzing%
+}{%
+{\protect \APACyear {2017}}%
+}]{%
+fritzing}
+\APACinsertmetastar {%
+fritzing}%
+\begin{APACrefauthors}%
+Fritzing.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2017}{}{}.
+\newblock
+\APACrefbtitle {Fritzing.} {Fritzing.}
+\newblock
+\APACaddressPublisher{}{fritzing}.
+\newblock
+\begin{APACrefURL} \url{http://fritzing.org/} \end{APACrefURL}
+\newblock
+\APACrefnote{fecha de consulta: 5 de Abril de 2017}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Gliffy%
+}{%
+Gliffy%
+}{%
+{\protect \APACyear {2017}}%
+}]{%
+gliffy}
+\APACinsertmetastar {%
+gliffy}%
+\begin{APACrefauthors}%
+Gliffy.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2017}{}{}.
+\newblock
+\APACrefbtitle {Gliffy.} {Gliffy.}
+\newblock
+\APACaddressPublisher{}{gliffy}.
+\newblock
+\begin{APACrefURL} \url{https://www.gliffy.com/} \end{APACrefURL}
+\newblock
+\APACrefnote{fecha de consulta: 5 de Abril de 2017}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+INE%
+}{%
+INE%
+}{%
+{\protect \APACyear {2017}}%
+}]{%
+censoINE}
+\APACinsertmetastar {%
+censoINE}%
+\begin{APACrefauthors}%
+INE.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2017}{}{}.
+\newblock
+\APACrefbtitle {Censo INE.} {Censo ine.}
+\newblock
+\APACaddressPublisher{}{Instituto Nacional de Estadística}.
+\newblock
+\begin{APACrefURL}
+  \url{http://www.ine.es/jaxi/tabla.do?path=/t13/p405/e01/l0/&file=04004.px&type=pcaxis&L=0}
+  \end{APACrefURL}
+\newblock
+\APACrefnote{fecha de consulta: 09 de Mayo de 2017}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Kar%
+}{%
+Kar%
+}{%
+{\protect \APACyear {2013}}%
+}]{%
+wireless}
+\APACinsertmetastar {%
+wireless}%
+\begin{APACrefauthors}%
+Kar, R.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2013}{}{}.
+\newblock
+\APACrefbtitle {Turn Raspberry Pi into a wireless access point.} {Turn
+  raspberry pi into a wireless access point.}
+\newblock
+\APACaddressPublisher{}{rpiblog}.
+\newblock
+\begin{APACrefURL}
+  \url{http://www.rpiblog.com/2012/12/turn-raspberry-pi-into-wireless-access.html}
+  \end{APACrefURL}
+\newblock
+\APACrefnote{fecha de consulta: 24 de Noviembre de 2016}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+NeuralAssembly%
+}{%
+NeuralAssembly%
+}{%
+{\protect \APACyear {2017}}%
+}]{%
+simpleMJPG}
+\APACinsertmetastar {%
+simpleMJPG}%
+\begin{APACrefauthors}%
+NeuralAssembly.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2017}{}{}.
+\newblock
+\APACrefbtitle {simpleMJPGView.} {simplemjpgview.}
+\newblock
+\APACaddressPublisher{}{neuralassembly}.
+\newblock
+\begin{APACrefURL} \url{https://bitbucket.org/neuralassembly/simplemjpegview}
+  \end{APACrefURL}
+\newblock
+\APACrefnote{fecha de consulta: 15 de Marzo de 2017}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+OpenCV%
+}{%
+OpenCV%
+}{%
+{\protect \APACyear {2017}}%
+}]{%
+OpenCV}
+\APACinsertmetastar {%
+OpenCV}%
+\begin{APACrefauthors}%
+OpenCV.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2017}{}{}.
+\newblock
+\APACrefbtitle {OpenCV.} {Opencv.}
+\newblock
+\APACaddressPublisherEqAuth{}{OpenCV}.
+\newblock
+\begin{APACrefURL} \url{http://opencv.org/} \end{APACrefURL}
+\newblock
+\APACrefnote{fecha de consulta: 11 de Mayo de 2017}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Raspberry%
+}{%
+Raspberry%
+}{%
+{\protect \APACyear {2017}}%
+}]{%
+raspbian}
+\APACinsertmetastar {%
+raspbian}%
+\begin{APACrefauthors}%
+Raspberry.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2017}{}{}.
+\newblock
+\APACrefbtitle {Raspberry Pi.} {Raspberry pi.}
+\newblock
+\APACaddressPublisherEqAuth{}{Raspberry}.
+\newblock
+\begin{APACrefURL} \url{https://www.raspberrypi.org/} \end{APACrefURL}
+\newblock
+\APACrefnote{fecha de consulta: 24 de Noviembre de 2016}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+TeXstudio%
+}{%
+TeXstudio%
+}{%
+{\protect \APACyear {2017}}%
+}]{%
+texstudio}
+\APACinsertmetastar {%
+texstudio}%
+\begin{APACrefauthors}%
+TeXstudio.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2017}{}{}.
+\newblock
+\APACrefbtitle {TeXstudio.} {Texstudio.}
+\newblock
+\APACaddressPublisherEqAuth{}{TeXstudio}.
+\newblock
+\begin{APACrefURL} \url{http://www.texstudio.org/} \end{APACrefURL}
+\newblock
+\APACrefnote{fecha de consulta: 11 de Abril de 2017}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Tinkercad%
+}{%
+Tinkercad%
+}{%
+{\protect \APACyear {2017}}%
+}]{%
+tinkercad}
+\APACinsertmetastar {%
+tinkercad}%
+\begin{APACrefauthors}%
+Tinkercad.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2017}{}{}.
+\newblock
+\APACrefbtitle {Tinkercad.} {Tinkercad.}
+\newblock
+\APACaddressPublisher{}{tinkercad}.
+\newblock
+\begin{APACrefURL} \url{https://www.tinkercad.com/} \end{APACrefURL}
+\newblock
+\APACrefnote{fecha de consulta: 5 de Abril de 2017}
+\PrintBackRefs{\CurrentBib}
+
+\end{thebibliography}
