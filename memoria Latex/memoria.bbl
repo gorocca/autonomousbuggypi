@@ -1,6 +1,34 @@
 \begin{thebibliography}{}
 
 \bibitem [\protect \citeauthoryear {%
+Acuña%
+}{%
+Acuña%
+}{%
+{\protect \APACyear {2016}}%
+}]{%
+servicio}
+\APACinsertmetastar {%
+servicio}%
+\begin{APACrefauthors}%
+Acuña, D.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2016}{}{}.
+\newblock
+\APACrefbtitle {Servicio Linux.} {Servicio linux.}
+\newblock
+\APACaddressPublisherEqAuth{}{Diego Acuña}.
+\newblock
+\begin{APACrefURL}
+  \url{http://www.diegoacuna.me/how-to-run-a-script-as-a-service-in-raspberry-pi-raspbian-jessie/}
+  \end{APACrefURL}
+\newblock
+\APACrefnote{fecha de consulta: 02 de Junio de 2017}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
 DGT%
 }{%
 DGT%
@@ -107,6 +135,34 @@ Gliffy.%
 \begin{APACrefURL} \url{https://www.gliffy.com/} \end{APACrefURL}
 \newblock
 \APACrefnote{fecha de consulta: 5 de Abril de 2017}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Ibáñez%
+}{%
+Ibáñez%
+}{%
+{\protect \APACyear {2017}}%
+}]{%
+cochesAutonomos}
+\APACinsertmetastar {%
+cochesAutonomos}%
+\begin{APACrefauthors}%
+Ibáñez.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2017}{}{}.
+\newblock
+\APACrefbtitle {Coches autónomos.} {Coches autónomos.}
+\newblock
+\APACaddressPublisher{}{Xataka}.
+\newblock
+\begin{APACrefURL}
+  \url{https://www.xataka.com/automovil/de-0-a-5-cuales-son-los-diferentes-niveles-de-conduccion-autonoma}
+  \end{APACrefURL}
+\newblock
+\APACrefnote{fecha de consulta: 11 de Junio de 2017}
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
@@ -243,6 +299,34 @@ Raspberry.%
 \begin{APACrefURL} \url{https://www.raspberrypi.org/} \end{APACrefURL}
 \newblock
 \APACrefnote{fecha de consulta: 24 de Noviembre de 2016}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Rosebrock%
+}{%
+Rosebrock%
+}{%
+{\protect \APACyear {2015}}%
+}]{%
+pedestrian}
+\APACinsertmetastar {%
+pedestrian}%
+\begin{APACrefauthors}%
+Rosebrock, A.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2015}{}{}.
+\newblock
+\APACrefbtitle {Pedestrian Detection OpenCV.} {Pedestrian detection opencv.}
+\newblock
+\APACaddressPublisherEqAuth{}{Adrian Rosebrock}.
+\newblock
+\begin{APACrefURL}
+  \url{http://www.pyimagesearch.com/2015/11/09/pedestrian-detection-opencv/}
+  \end{APACrefURL}
+\newblock
+\APACrefnote{fecha de consulta: 15 de Mayo de 2017}
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%

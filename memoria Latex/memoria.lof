@@ -1,33 +1,41 @@
 \select@language {spanish}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {1.1}{\ignorespaces Spy Tank}}{2}
-\contentsline {figure}{\numberline {1.2}{\ignorespaces BMW X6}}{3}
+\contentsline {figure}{\numberline {1.1}{\ignorespaces Spy Tank}}{6}
+\contentsline {figure}{\numberline {1.2}{\ignorespaces BMW X6}}{7}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {2.1}{\ignorespaces Coche sin desmontar}}{6}
-\contentsline {figure}{\numberline {2.2}{\ignorespaces Piezas sustituidas}}{6}
-\contentsline {figure}{\numberline {2.3}{\ignorespaces Piezas nuevas en su ubicaci\IeC {\'o}n}}{7}
-\contentsline {figure}{\numberline {2.4}{\ignorespaces Raspberry y Arduino usados}}{8}
-\contentsline {figure}{\numberline {2.5}{\ignorespaces Conexionado}}{8}
-\contentsline {figure}{\numberline {2.6}{\ignorespaces PCB}}{9}
-\contentsline {figure}{\numberline {2.7}{\ignorespaces Leds y su emplazamiento}}{10}
-\contentsline {figure}{\numberline {2.8}{\ignorespaces WebCam Antigua}}{10}
-\contentsline {figure}{\numberline {2.9}{\ignorespaces WebCam port\IeC {\'a}til}}{11}
-\contentsline {figure}{\numberline {2.10}{\ignorespaces Placa dise\IeC {\~n}ada 3D para el soporte de la Raspberrry y el Arduino}}{11}
-\contentsline {figure}{\numberline {2.11}{\ignorespaces Placa impresa en 3D}}{12}
-\contentsline {figure}{\numberline {2.12}{\ignorespaces Placa impresa en 3D con la torniller\IeC {\'\i }a necesaria}}{12}
-\contentsline {figure}{\numberline {2.13}{\ignorespaces Placa impresa en 3D con los dispositivos montados}}{13}
-\contentsline {figure}{\numberline {2.14}{\ignorespaces Prototipo sin montar la placa de soporte}}{13}
-\contentsline {figure}{\numberline {2.15}{\ignorespaces Prototipo resultante con todo montado}}{14}
-\contentsline {figure}{\numberline {2.16}{\ignorespaces UML de la verificaci\IeC {\'o}n de la comunicaci\IeC {\'o}n con arduino}}{15}
-\contentsline {figure}{\numberline {2.17}{\ignorespaces UML de la comunicaci\IeC {\'o}n del cambio de tracci\IeC {\'o}n/freno y direcci\IeC {\'o}n}}{16}
-\contentsline {figure}{\numberline {2.18}{\ignorespaces UML del procesado de im\IeC {\'a}genes}}{19}
-\contentsline {figure}{\numberline {2.19}{\ignorespaces Captura de la pantalla de inicio de la aplicaci\IeC {\'o}n}}{20}
-\contentsline {figure}{\numberline {2.20}{\ignorespaces Captura de la pantalla principal de la aplicaci\IeC {\'o}n sin conexi\IeC {\'o}n}}{21}
-\contentsline {figure}{\numberline {2.21}{\ignorespaces Captura de la pantalla principal de la aplicaci\IeC {\'o}n funcionando}}{21}
-\contentsline {figure}{\numberline {2.22}{\ignorespaces Captura de la pantalla de opciones de la aplicaci\IeC {\'o}n}}{21}
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Diagrama del dise\IeC {\~n}o b\IeC {\'a}sico del proyecto}}{8}
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Coche sin desmontar}}{11}
+\contentsline {figure}{\numberline {2.3}{\ignorespaces Piezas sustituidas}}{11}
+\contentsline {figure}{\numberline {2.4}{\ignorespaces Piezas nuevas en su ubicaci\IeC {\'o}n}}{12}
+\contentsline {figure}{\numberline {2.5}{\ignorespaces Raspberry y Arduino usados}}{13}
+\contentsline {figure}{\numberline {2.6}{\ignorespaces Conexionado}}{13}
+\contentsline {figure}{\numberline {2.7}{\ignorespaces PCB}}{14}
+\contentsline {figure}{\numberline {2.8}{\ignorespaces LEDs y su emplazamiento}}{15}
+\contentsline {figure}{\numberline {2.9}{\ignorespaces WebCam Antigua}}{15}
+\contentsline {figure}{\numberline {2.10}{\ignorespaces WebCam port\IeC {\'a}til}}{16}
+\contentsline {figure}{\numberline {2.11}{\ignorespaces Placa dise\IeC {\~n}ada 3D para el soporte de la Raspberrry y el Arduino}}{16}
+\contentsline {figure}{\numberline {2.12}{\ignorespaces Placa impresa en 3D}}{17}
+\contentsline {figure}{\numberline {2.13}{\ignorespaces Placa impresa en 3D con la torniller\IeC {\'\i }a necesaria}}{17}
+\contentsline {figure}{\numberline {2.14}{\ignorespaces Placa impresa en 3D con los dispositivos montados}}{18}
+\contentsline {figure}{\numberline {2.15}{\ignorespaces Prototipo sin montar la placa de soporte}}{18}
+\contentsline {figure}{\numberline {2.16}{\ignorespaces Prototipo resultante con todo montado}}{19}
+\contentsline {figure}{\numberline {2.17}{\ignorespaces UML de la verificaci\IeC {\'o}n de la comunicaci\IeC {\'o}n con Arduino}}{20}
+\contentsline {figure}{\numberline {2.18}{\ignorespaces UML de la comunicaci\IeC {\'o}n del cambio de tracci\IeC {\'o}n/freno y direcci\IeC {\'o}n}}{21}
+\contentsline {figure}{\numberline {2.19}{\ignorespaces UML del procesado de im\IeC {\'a}genes}}{24}
+\contentsline {figure}{\numberline {2.20}{\ignorespaces Captura de la pantalla de inicio de la aplicaci\IeC {\'o}n}}{25}
+\contentsline {figure}{\numberline {2.21}{\ignorespaces Captura de la pantalla principal de la aplicaci\IeC {\'o}n sin conexi\IeC {\'o}n}}{26}
+\contentsline {figure}{\numberline {2.22}{\ignorespaces Captura de la pantalla principal de la aplicaci\IeC {\'o}n funcionando}}{26}
+\contentsline {figure}{\numberline {2.23}{\ignorespaces Captura de la pantalla de opciones de la aplicaci\IeC {\'o}n}}{26}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {3.1}{\ignorespaces Diagrama de Gantt Inicial}}{24}
-\contentsline {figure}{\numberline {3.2}{\ignorespaces Diagrama de Gantt Inicial 2}}{25}
-\contentsline {figure}{\numberline {3.3}{\ignorespaces Diagrama de Gantt Inicial 3}}{26}
-\contentsline {figure}{\numberline {3.4}{\ignorespaces Captura del video de prueba con la aplicaci\IeC {\'o}n}}{32}
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Diagrama de Gantt Inicial}}{29}
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Diagrama de Gantt Inicial 2}}{30}
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Diagrama de Gantt Inicial 3}}{31}
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Diagrama de Gantt Final}}{33}
+\contentsline {figure}{\numberline {3.5}{\ignorespaces Diagrama de Gantt Final 2}}{34}
+\contentsline {figure}{\numberline {3.6}{\ignorespaces Diagrama de Gantt Final 3}}{35}
+\contentsline {figure}{\numberline {3.7}{\ignorespaces Diagrama de Gantt Final 4}}{36}
+\contentsline {figure}{\numberline {3.8}{\ignorespaces Esquema de variaci\IeC {\'o}n de fechas}}{37}
+\contentsline {figure}{\numberline {3.9}{\ignorespaces Esquema de variaci\IeC {\'o}n de la duraci\IeC {\'o}n del proyecto}}{37}
+\contentsline {figure}{\numberline {3.10}{\ignorespaces Gr\IeC {\'a}fica comparativa del trabajo previsto y real}}{37}
+\contentsline {figure}{\numberline {3.11}{\ignorespaces Captura del v\IeC {\'\i }deo de prueba con la aplicaci\IeC {\'o}n}}{43}
 \contentsfinish 
