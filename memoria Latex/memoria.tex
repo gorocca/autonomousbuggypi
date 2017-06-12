@@ -272,6 +272,8 @@ Este producto se parece más a nuestro proyecto, podemos disfrutar del modelismo
 
 
 \section{Elicitación de requisitos y análisis de riesgos}
+
+
 \chapter{BLOQUE 2: EJECUCIÓN DEL PROYECTO}
 \section{Diseño del sistema}
 
@@ -698,7 +700,7 @@ Las pruebas realizadas del sistema han sido muy diversas, ya que en cada paso de
 		
 		Luego ya integrado con el script principal de los servicios, probamos la aplicación SimpleMJPEG de Android, para consumir las imágenes y comprobar si era fluida las imágenes.
 	
-	\item Aplicación:
+	\item Aplicación Android:
 	
 		Como anteriormente comentamos la aplicación se ha probado en dos partes. En primer lugar la parte de sensor de aceleración de la tablet y el slider, todo ello con la conexión de instrucciones. Para ello se usó una aplicación con solo esta parte y se usó durante unos 20 min para comprobar la respuesta del vehículo.
 		
@@ -708,8 +710,23 @@ Las pruebas realizadas del sistema han sido muy diversas, ya que en cada paso de
 		
 	\item Procesado de imágenes:
 	
+		En primer lugar se probó a descargar desde un script en Python los frames que produce el streaming de vídeo del coche. Para ello se descargó y luego se mostró en una pantalla dichos frames.
+		
+		A continuación se probó la detección de personas desde la WebCam del ordenador para ajustar los valores de la función que detecta las personas. Tras prueba y error con dichos valores, sopesando entre rendimiento y precisión, integramos la descarga de imágenes con la detección de personas. Entonces probamos como era el rendimiento del conjunto.
+		
+		Al comprobar todo lo anterior, se prosiguió con la siguiente prueba, la integración del control del coche con la detección de personas. Después de programar todo lo necesario, se tuvo en pruebas unos 15 min, intercalando varias personas en la imagen y nadie, para ver si el resultado es el esperado. Y así fue, solo que con un poco de retardo, pero acabó funcionando perfectamente. 		
+		
+		
+	
 	\item Funcionamiento completo:
 	
+		Con todas las pruebas anteriormente comentadas, estaba más que suficientemente probado todo, ya que se ha ido probando parte por parte la integración. Aún así se acometieron algunas pruebas no realizadas antes, como por ejemplo, al integrar el script como un servicio de Linux, había que probar si funcionaba cada vez que arrancaba sin hacer nada.
+		
+		Además se probó que no se pudieran conectar más de un cliente a la vez. Al trastear con esta prueba se halló un problema con los puertos de entrada/salida que controlan los LEDs, que al terminar una conexión limpiaba estos. El problema radicaba justo cuando se cerraba la primera conexión, se tomaron las medidas oportunas y se arregló el problema.
+		
+		También hubo que modificar que al cerrar el programa se limpiaran los puertos de entrada/salida, ya que si hay algún problema y el script se reinicia sin limpiarlos, nos dará un error y no podrá continuar, así que se hizo esa prueba y al principio falló, con lo que se modificó.
+		
+		A continuación se probó en general todo el proyecto, así como el tiempo de respuesta, alcance y rendimiento.	
 		
 	
 \end{itemize}
@@ -884,7 +901,25 @@ A continuación detallaremos una planificación financiera a posteriori:
 	\end{itemize}
  
 \cdpchapter{Conclusiones}
+
+	Debido a la falta de tiempo como ya hemos comentado antes, no se han cumplido al 100 \% los objetivos. El primer objetivo ``Construir un coche radiocontrol controlado por una RaspberryPi'' se ha cumplido completamente y a la perfección.
+	
+	En cuanto al objetivo de automatización es donde más nos hemos alejado de la idea inicial. Lo que pensábamos hacer era que el coche mediante la cámara siguiera un circuito e incluso evitara obstáculos. Pero debido a la falta de tiempo sólo se pudo llegar a implementar la detección de personas, combinada con el control del coche.
+	
+	En conclusión, no solo ya conforme a la cobertura de los objetivos iniciales, que dentro de lo que cabo nos sentimos satisfechos del trabajo realizado, si no los conocimientos adquiridos sobre el manejo de las placas, el protocolo de comunicación serie, el protocolo de comunicación en red, etc. 
+
+
 \cdpchapter{Trabajo futuro}
+
+	En el futuro podría mejorarse como no lo que el tiempo no nos ha dejado terminar, la autonomía del coche, que el coche vaya solo con la cámara sin intervención de nadie. 
+	
+	También surgen líneas como la seguridad, la red WiFi que ahora mismo emite nuestra Raspberry es una red abierta, sin clave, con lo que cualquiera podría conectarse y trastear la placa. 
+	
+	Además podría mejorarse el protocolo de comunicación entre la Raspberry y los clientes, que aunque esté implementada sobre TCP, debería de haber comunicación en ambos sentidos para confirmar la correcta recepción de las órdenes.
+	
+	Si el proyecto continuase, además habría que plantearse que Raspberry se pudiese integrar en un sistema con comunicación CAN-BUS como el que utilizan la mayoría de los coches modernos, con lo que ganaríamos luego en facilidad de instalación en cualquier modelo de coche ya comercializado.
+
+
 \cdpchapter{Bibliografía}
 	
 	\bibliographystyle{apacite}
