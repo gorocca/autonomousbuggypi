@@ -6,6 +6,8 @@
 \usepackage{float}
 \usepackage{enumerate} 
 \usepackage{url}
+%\usepackage{hyperref}
+
 \begin{document}
 \pagenumbering{arabic}
 \tipo{Grado}   % Grado o M\'aster
@@ -59,19 +61,27 @@ Con esto se pretendía desarrollar contenidos no vistos durante el Grado en Inge
 
 \cdpchapter{Resumen en inglés}
 
-This project is framed in a hardware environment mainly, in which it is tried to implement the total control on a vehicle. In our case, we have implemented manual control of a prototype vehicle, based on a radio control car since implementing it in a real car was expensive and dangerous. This control has been developed in an application for devices based on Android. In addition, it was wanted to design a system as modular as possible and cheap, which from the beginning was adopted the decision to implement the project around the miniPC Raspberry Pi, specifically version 3 model B. After several failures, In the system an Arduino Nano to solve several errors.
+This project is mainly framed in a hardware environment, in which it is tried to implement the total control on a vehicle. In our case, we have implemented the manual control of a prototype vehicle, based on a radio-controlled car since implementing it in a real car was expensive and dangerous. This control has been developed in an application for Android-based devices. In addition, it was wanted to design a system as modular and cheap as possible, so that, from the beginning it was adopted the decision of implementing the project
+around the miniPC Raspberry Pi, specifically, version 3 model B. 
+After several failures, it was included in the system an Arduino Nano in order to solve several errors.
+
 
 \medspace
 \medspace
 \medspace
 
-From the first moment the project is developed with the idea of automating the control of the vehicle. After numerous failures and lack of time, it has had to leave the complete automation in a small part of it. At first it was thought to implement the tracking of a line by means of images, but in the end it has been implemented a detection of people that allow the circulation or not of the vehicle. In this case, a script has been developed in PC which is in charge of the functionality that we just comment.
+
+From the very first moment the project is developed with the idea of automating the control of the vehicle. After numerous failures and due to a lack of time, it has had to leave the complete automation in a small part of it. At the beginning, it was thought to implement the tracking of a line by means of images, but, in the end, it has been implemented a people detection that allows the circulation or not of the vehicle. 
+In this case, a script has been developed in PC which is in charge of the functionality that we have just commented.
 
 \medspace
 \medspace
 \medspace
 
-This was intended to develop content not seen during the Grado en Ingeniería Informática - Tecnologías Informáticas and further delve into the subject of automobile control. In addition it was intended to learn about real-time systems control and to obtain skills that are not part of our university studies.
+This was intended to develop unseen content during the Grado en Ingeniería Informática - Tecnologías Informáticas and, furthermore, to go deeper into the subject of automobile control. 
+In addition, it was intended to learn about the real-time systems control and to obtain skills that are not part of our university studies.
+
+
         
 \tableofcontents
 
@@ -902,22 +912,21 @@ A continuación detallaremos una planificación financiera a posteriori:
  
 \cdpchapter{Conclusiones}
 
-	Debido a la falta de tiempo como ya hemos comentado antes, no se han cumplido al 100 \% los objetivos. El primer objetivo ``Construir un coche radiocontrol controlado por una RaspberryPi'' se ha cumplido completamente y a la perfección.
+	Como podemos ver hemos conseguido un producto terminado que podría salir al mercado en cualquier momento. Hemos cumplido con los objetivos fijados no solo a nivel funcional, si no a nivel académico. Hemos aprendido bastante conforme a los objetivos educativos, los conocimientos adquiridos sobre el manejo de las placas, el protocolo de comunicación serie, el protocolo de comunicación en red, etc. 
 	
-	En cuanto al objetivo de automatización es donde más nos hemos alejado de la idea inicial. Lo que pensábamos hacer era que el coche mediante la cámara siguiera un circuito e incluso evitara obstáculos. Pero debido a la falta de tiempo sólo se pudo llegar a implementar la detección de personas, combinada con el control del coche.
-	
-	En conclusión, no solo ya conforme a la cobertura de los objetivos iniciales, que dentro de lo que cabo nos sentimos satisfechos del trabajo realizado, si no los conocimientos adquiridos sobre el manejo de las placas, el protocolo de comunicación serie, el protocolo de comunicación en red, etc. 
+	En conclusión hemos de estar satisfechos con el trabajo realizado, ya que se ha cumplido con todo lo esperado y se ha aprendido bastantes temas que no son abordados en el grado.
 
 
 \cdpchapter{Trabajo futuro}
 
-	En el futuro podría mejorarse como no lo que el tiempo no nos ha dejado terminar, la autonomía del coche, que el coche vaya solo con la cámara sin intervención de nadie. 
+	En el futuro podría mejorarse muchísimo en bastantes aspectos, como puede ser la autonomía del coche, que el coche además de ser manejado desde la aplicación móvil pueda detenerse ante una persona. Esto no se llevó a cabo debido a problemas de rendimiento con el streamer que había implementado, que ocupaba la cámara y no podíamos hacer nada más. Una solución a esto sería que el propio servidor Python ocupara la cámara enviara los frames por un lado y los procesara por otro, y tras procesarlos que decidiera que hacer.
+	Incluso también podría hacerse de otra manera, por ejemplo, montando dos cámaras, una encargada de transmitir el vídeo a las aplicaciones externas y la otra encargada del procesado de imágenes.
 	
-	También surgen líneas como la seguridad, la red WiFi que ahora mismo emite nuestra Raspberry es una red abierta, sin clave, con lo que cualquiera podría conectarse y trastear la placa. 
+	También surgen líneas como la seguridad, la red WiFi que ahora mismo emite nuestra Raspberry es una red abierta, sin clave, con lo que cualquiera podría conectarse y trastear la placa. También es posible solucionarlo fácilmente, modificando los archivos de configuración del programa que emite el SSID, añadiéndole una contraseña WPA2 por ejemplo.
 	
-	Además podría mejorarse el protocolo de comunicación entre la Raspberry y los clientes, que aunque esté implementada sobre TCP, debería de haber comunicación en ambos sentidos para confirmar la correcta recepción de las órdenes.
+	Además podría mejorarse el protocolo de comunicación entre la Raspberry y los clientes, que aunque esté implementada sobre TCP, debería de haber comunicación en ambos sentidos para confirmar la correcta recepción de las órdenes. Por ejemplo hacer lo mismo que se hace en el protocolo serie, primero realizar un saludo entre ambas partes y después de enviar una instrucción, enviar una suma de comprobación para comprobar la integridad de los datos.
 	
-	Si el proyecto continuase, además habría que plantearse que Raspberry se pudiese integrar en un sistema con comunicación CAN-BUS como el que utilizan la mayoría de los coches modernos, con lo que ganaríamos luego en facilidad de instalación en cualquier modelo de coche ya comercializado.
+	Si el proyecto continuase, además habría que plantearse que Raspberry se pudiese integrar en un sistema con comunicación CAN-BUS como el que utilizan la mayoría de los coches modernos, con lo que ganaríamos luego en facilidad de instalación en cualquier modelo de coche ya comercializado. Igualmente una solución podría ser añadir una placa para el CAN-BUS y cambiar la comunicación de red por una sobre la red CAN-BUS propiamente.
 
 
 \cdpchapter{Bibliografía}
@@ -940,16 +949,27 @@ A continuación detallaremos una planificación financiera a posteriori:
 	
 	\item Vídeos de prueba
 		\begin{itemize}
-			\item Primer vídeo de prueba con la aplicación
+			\item Primer vídeo de prueba con la aplicación:
 				\begin{figure}[H]
 					\centering
-					\includegraphics[width=0.7\textwidth]{img/capturaPrimerVideoApp}
+					\includegraphics[width=0.65\textwidth]{img/capturaPrimerVideoApp}
 					\caption{Captura del vídeo de prueba con la aplicación}
 					\label{fig:capturaPrimerVideoApp}
 				\end{figure}
 		
 				 Vídeo: \url{https://youtu.be/g_npEDxkSyo}
+				 
 				
+				\item Vídeo de prueba de los LEDs y tiempo de arranque:
+				
+				\begin{figure}[H]
+					\centering
+					\includegraphics[width=0.65\textwidth]{img/testLeds}
+					\caption{Captura del vídeo de prueba de los LEDs y el tiempo de encendido}
+					\label{fig:capturaLeds}
+				\end{figure}
+				
+				Vídeo: \url{https://youtu.be/C1AJe-r5ouk}
 		\end{itemize}
 
 \end{enumerate}
