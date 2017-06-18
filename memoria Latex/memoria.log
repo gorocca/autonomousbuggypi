@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6210 64-bit) (preloaded format=pdflatex 2017.3.2)  14 JUN 2017 18:54
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6210 64-bit) (preloaded format=pdflatex 2017.3.2)  18 JUN 2017 13:27
 entering extended mode
 **./memoria.tex
 (memoria.tex
@@ -680,18 +680,18 @@ LaTeX Info: Redefining \% on input line 7.
 )
 \openout1 = `memoria.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 11.
-LaTeX Font Info:    ... okay on input line 11.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 11.
-LaTeX Font Info:    ... okay on input line 11.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 11.
-LaTeX Font Info:    ... okay on input line 11.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 11.
-LaTeX Font Info:    ... okay on input line 11.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 11.
-LaTeX Font Info:    ... okay on input line 11.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 11.
-LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 12.
+LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 12.
+LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 12.
+LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 12.
+LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 12.
+LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 12.
+LaTeX Font Info:    ... okay on input line 12.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -782,8 +782,8 @@ Package grfext Info: Graphics extension search list:
 G,.JBIG2,.JB2,.eps]
 (grfext)             \AppendGraphicsExtensions on input line 456.
 )
-LaTeX Info: Redefining \. on input line 11.
-LaTeX Info: Redefining \% on input line 11.
+LaTeX Info: Redefining \. on input line 12.
+LaTeX Info: Redefining \% on input line 12.
 \c@lstlisting=\count133
 \c@maskedRefs=\count134
 
@@ -795,35 +795,35 @@ LaTeX Info: Redefining \BHBI on input line 139.
 <img/us.jpg, id=1, 36.135pt x 36.135pt>
 File: img/us.jpg Graphic file (type jpg)
  <use img/us.jpg>
-Package pdftex.def Info: img/us.jpg used on input line 22.
+Package pdftex.def Info: img/us.jpg used on input line 24.
 (pdftex.def)             Requested size: 90.33722pt x 90.33722pt.
-LaTeX Font Info:    Try loading font information for OT1+phv on input line 22.
+LaTeX Font Info:    Try loading font information for OT1+phv on input line 24.
 
 ("D:\Archivos de programas\MiKTeX 2.9\tex\latex\psnfss\ot1phv.fd"
 File: ot1phv.fd 2001/06/04 scalable font definitions for OT1/phv.
 )
 LaTeX Font Info:    Font shape `OT1/phv/bx/n' in size <10.95> not available
-(Font)              Font shape `OT1/phv/b/n' tried instead on input line 22.
+(Font)              Font shape `OT1/phv/b/n' tried instead on input line 24.
 LaTeX Font Info:    Font shape `OT1/phv/bx/n' in size <12> not available
-(Font)              Font shape `OT1/phv/b/n' tried instead on input line 22.
+(Font)              Font shape `OT1/phv/b/n' tried instead on input line 24.
  [1
 
 
 {C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map} <./img/us.jpg>] (tocdef.te
 x)
 LaTeX Font Info:    Font shape `OT1/phv/bx/n' in size <14.4> not available
-(Font)              Font shape `OT1/phv/b/n' tried instead on input line 27.
-LaTeX Font Info:    Try loading font information for U+msa on input line 32.
+(Font)              Font shape `OT1/phv/b/n' tried instead on input line 29.
+LaTeX Font Info:    Try loading font information for U+msa on input line 34.
 
 ("D:\Archivos de programas\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 32.
+LaTeX Font Info:    Try loading font information for U+msb on input line 34.
 
 ("D:\Archivos de programas\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd"
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Try loading font information for U+lasy on input line 32.
+LaTeX Font Info:    Try loading font information for U+lasy on input line 34.
 
 ("D:\Archivos de programas\MiKTeX 2.9\tex\latex\base\ulasy.fd"
 File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
@@ -838,31 +838,14 @@ File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
 ] (memoria.toc
 LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
-)
+ [4
+
+])
 \tf@toc=\write3
 \openout3 = `memoria.toc'.
 
- [4
-
-] (memoria.lof
-LaTeX Info: Redefining \. on input line 1.
-LaTeX Info: Redefining \% on input line 1.
-)
-\tf@lof=\write4
-\openout4 = `memoria.lof'.
-
- [5
-
-]
-Cap\'{\i }tulo 1.
-LaTeX Font Info:    Font shape `OT1/phv/bx/n' in size <24.88> not available
-(Font)              Font shape `OT1/phv/b/n' tried instead on input line 93.
-[1
-
-
-]
-LaTeX Info: Redefining \. on input line 141.
-LaTeX Info: Redefining \% on input line 141.
+LaTeX Info: Redefining \. on input line 80.
+LaTeX Info: Redefining \% on input line 80.
 
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -870,378 +853,427 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[2]
-LaTeX Info: Redefining \. on input line 183.
-LaTeX Info: Redefining \% on input line 183.
+[5] (memoria.lof
+LaTeX Info: Redefining \. on input line 1.
+LaTeX Info: Redefining \% on input line 1.
+ [6
+
+])
+\tf@lof=\write4
+\openout4 = `memoria.lof'.
+
+LaTeX Info: Redefining \. on input line 81.
+LaTeX Info: Redefining \% on input line 81.
+ [7]
+Cap\'{\i }tulo 1.
+LaTeX Font Info:    Font shape `OT1/phv/bx/n' in size <24.88> not available
+(Font)              Font shape `OT1/phv/b/n' tried instead on input line 84.
+[1
+
+
+]
+LaTeX Info: Redefining \. on input line 118.
+LaTeX Info: Redefining \% on input line 118.
+ [2]
+LaTeX Info: Redefining \. on input line 143.
+LaTeX Info: Redefining \% on input line 143.
  [3]
+LaTeX Info: Redefining \. on input line 192.
+LaTeX Info: Redefining \% on input line 192.
+ [4]
 LaTeX Info: Redefining \. on input line 231.
 LaTeX Info: Redefining \% on input line 231.
- [4] <img/producto1.jpg, id=41, 636.3775pt x 310.15875pt>
+ [5] <img/producto1.jpg, id=51, 228.855pt x 186.09525pt>
 File: img/producto1.jpg Graphic file (type jpg)
 
 <use img/producto1.jpg>
-Package pdftex.def Info: img/producto1.jpg used on input line 258.
-(pdftex.def)             Requested size: 469.47308pt x 228.80872pt.
+Package pdftex.def Info: img/producto1.jpg used on input line 249.
+(pdftex.def)             Requested size: 469.47308pt x 381.77312pt.
 
-Overfull \hbox (42.68173pt too wide) in paragraph at lines 258--259
+Overfull \hbox (42.68173pt too wide) in paragraph at lines 249--250
  [][] 
  []
 
-LaTeX Info: Redefining \. on input line 262.
-LaTeX Info: Redefining \% on input line 262.
-[5] <img/producto2.jpg, id=45, 419.166pt x 358.4592pt>
+LaTeX Info: Redefining \. on input line 253.
+LaTeX Info: Redefining \% on input line 253.
+[6] <img/producto2.jpg, id=55, 419.166pt x 358.4592pt>
 File: img/producto2.jpg Graphic file (type jpg)
  <use img/producto2.jpg>
-Package pdftex.def Info: img/producto2.jpg used on input line 274.
-(pdftex.def)             Requested size: 469.47308pt x 401.48796pt.
+Package pdftex.def Info: img/producto2.jpg used on input line 265.
+(pdftex.def)             Requested size: 512.14832pt x 438.01422pt.
 
-Overfull \hbox (42.68173pt too wide) in paragraph at lines 274--275
+Overfull \hbox (85.35696pt too wide) in paragraph at lines 265--266
  [][] 
  []
 
+LaTeX Info: Redefining \. on input line 269.
+LaTeX Info: Redefining \% on input line 269.
+[7 <./img/producto1.jpg>]
 LaTeX Info: Redefining \. on input line 278.
 LaTeX Info: Redefining \% on input line 278.
-[6 <./img/producto1.jpg>]
-LaTeX Info: Redefining \. on input line 287.
-LaTeX Info: Redefining \% on input line 287.
- [7 <./img/producto2.jpg>]
+ [8 <./img/producto2.jpg>]
 Cap\'{\i }tulo 2.
-<img/diseno.png, id=54, 685.96275pt x 307.74976pt>
+<img/diseno.png, id=63, 685.96275pt x 307.74976pt>
 File: img/diseno.png Graphic file (type png)
  <use img/diseno.png>
-Package pdftex.def Info: img/diseno.png used on input line 300.
-(pdftex.def)             Requested size: 384.1096pt x 172.32928pt.
+Package pdftex.def Info: img/diseno.png used on input line 291.
+(pdftex.def)             Requested size: 426.79135pt x 191.47906pt.
 
-[8
+[9
 
- <./img/diseno.png>]
-Overfull \hbox (1.59747pt too wide) in paragraph at lines 355--357
+]
+LaTeX Info: Redefining \. on input line 321.
+LaTeX Info: Redefining \% on input line 321.
+ [10 <./img/diseno.png>]
+Overfull \hbox (1.59747pt too wide) in paragraph at lines 346--348
 []\OT1/cmr/m/n/10.95 Fritzing es una ini-cia-ti-va de hard-wa-re de codi-go ab
 ier-to que ha-ce que la electroni-
  []
 
-LaTeX Info: Redefining \. on input line 357.
-LaTeX Info: Redefining \% on input line 357.
-[9] <img/A959.jpg, id=61, 752.8125pt x 752.8125pt>
+LaTeX Info: Redefining \. on input line 376.
+LaTeX Info: Redefining \% on input line 376.
+[11] <img/A959.jpg, id=74, 752.8125pt x 752.8125pt>
 File: img/A959.jpg Graphic file (type jpg)
  <use img/A959.jpg>
-Package pdftex.def Info: img/A959.jpg used on input line 388.
-(pdftex.def)             Requested size: 298.75264pt x 298.75334pt.
-LaTeX Info: Redefining \. on input line 392.
-LaTeX Info: Redefining \% on input line 392.
- [10]
-<img/piezasSustituidas.png, id=65, 3003.22pt x 2184.16pt>
+Package pdftex.def Info: img/A959.jpg used on input line 379.
+(pdftex.def)             Requested size: 426.79135pt x 426.79869pt.
+
+<img/piezasSustituidas.png, id=75, 3003.22pt x 2184.16pt>
 File: img/piezasSustituidas.png Graphic file (type png)
 
 <use img/piezasSustituidas.png>
-Package pdftex.def Info: img/piezasSustituidas.png used on input line 397.
-(pdftex.def)             Requested size: 298.75264pt x 217.26233pt.
-
-<img/piezasNuevas.png, id=67, 2625.81pt x 3601.455pt>
+Package pdftex.def Info: img/piezasSustituidas.png used on input line 388.
+(pdftex.def)             Requested size: 426.79135pt x 310.37952pt.
+LaTeX Info: Redefining \. on input line 392.
+LaTeX Info: Redefining \% on input line 392.
+ [12 <./img/A959.jpg>]
+<img/piezasNuevas.png, id=80, 2625.81pt x 3601.455pt>
 File: img/piezasNuevas.png Graphic file (type png)
 
 <use img/piezasNuevas.png>
-Package pdftex.def Info: img/piezasNuevas.png used on input line 406.
-(pdftex.def)             Requested size: 298.75264pt x 409.73485pt.
-LaTeX Info: Redefining \. on input line 409.
-LaTeX Info: Redefining \% on input line 409.
- [11 <./img/A959.jpg> <./img/piezasSustituidas.png>]
-<img/raspArd.png, id=72, 3272.225pt x 1651.16875pt>
+Package pdftex.def Info: img/piezasNuevas.png used on input line 397.
+(pdftex.def)             Requested size: 341.43437pt x 468.26054pt.
+LaTeX Info: Redefining \. on input line 401.
+LaTeX Info: Redefining \% on input line 401.
+ [13 <./img/piezasSustituidas.png>]
+<img/raspArd.png, id=85, 3272.225pt x 1651.16875pt>
 File: img/raspArd.png Graphic file (type png)
  <use img/raspArd.png>
-Package pdftex.def Info: img/raspArd.png used on input line 415.
-(pdftex.def)             Requested size: 298.75264pt x 150.74033pt.
+Package pdftex.def Info: img/raspArd.png used on input line 406.
+(pdftex.def)             Requested size: 384.1096pt x 193.8234pt.
+LaTeX Info: Redefining \. on input line 410.
+LaTeX Info: Redefining \% on input line 410.
+
+[14 <./img/piezasNuevas.png>]
+<img/conexionado.png, id=90, 954.767pt x 460.119pt>
+File: img/conexionado.png Graphic file (type png)
+ <use img/conexionado.png>
+Package pdftex.def Info: img/conexionado.png used on input line 415.
+(pdftex.def)             Requested size: 954.76468pt x 460.11787pt.
 LaTeX Info: Redefining \. on input line 419.
 LaTeX Info: Redefining \% on input line 419.
 
-[12 <./img/piezasNuevas.png>]
-<img/conexionado.png, id=77, 954.767pt x 460.119pt>
-File: img/conexionado.png Graphic file (type png)
- <use img/conexionado.png>
-Package pdftex.def Info: img/conexionado.png used on input line 424.
-(pdftex.def)             Requested size: 384.1096pt x 185.1115pt.
+[15 <./img/raspArd.png>]
+Overfull \vbox (31.47308pt too high) has occurred while \output is active []
 
-<img/pcb.png, id=78, 3806.22pt x 1927.2pt>
+LaTeX Info: Redefining \. on input line 419.
+LaTeX Info: Redefining \% on input line 419.
+
+[16 <./img/conexionado.png>] <img/pcb.png, id=99, 3806.22pt x 1927.2pt>
 File: img/pcb.png Graphic file (type png)
- <use img/pcb.png>
-Package pdftex.def Info: img/pcb.png used on input line 435.
-(pdftex.def)             Requested size: 298.75264pt x 151.26788pt.
-LaTeX Info: Redefining \. on input line 439.
-LaTeX Info: Redefining \% on input line 439.
- [13 <./img/raspArd.png> <./img/conexionado.png>] <img/leds.png, id=85, 2144.01
-pt x 1818.795pt>
+
+<use img/pcb.png>
+Package pdftex.def Info: img/pcb.png used on input line 426.
+(pdftex.def)             Requested size: 384.1096pt x 194.46628pt.
+ <img/leds.png, id=100, 2144.01pt x 1818.795pt>
 File: img/leds.png Graphic file (type png)
 
 <use img/leds.png>
-Package pdftex.def Info: img/leds.png used on input line 453.
-(pdftex.def)             Requested size: 298.75264pt x 253.4362pt.
-LaTeX Info: Redefining \. on input line 457.
-LaTeX Info: Redefining \% on input line 457.
- [14 <./img/pcb.png>]
-<img/webCamAntigua.png, id=90, 3035.34pt x 3288.285pt>
+Package pdftex.def Info: img/leds.png used on input line 444.
+(pdftex.def)             Requested size: 426.79135pt x 362.0319pt.
+LaTeX Info: Redefining \. on input line 448.
+LaTeX Info: Redefining \% on input line 448.
+ [17 <./img/pcb.png>]
+<img/webCamAntigua.png, id=106, 3035.34pt x 3288.285pt>
 File: img/webCamAntigua.png Graphic file (type png)
 
 <use img/webCamAntigua.png>
-Package pdftex.def Info: img/webCamAntigua.png used on input line 462.
-(pdftex.def)             Requested size: 298.75264pt x 323.62955pt.
-LaTeX Info: Redefining \. on input line 468.
-LaTeX Info: Redefining \% on input line 468.
- [15 <./img/leds.png> <./img/webCamAntigua.png>]
-<img/webcamPortatil.png, id=96, 4047.12pt x 1758.57pt>
+Package pdftex.def Info: img/webCamAntigua.png used on input line 453.
+(pdftex.def)             Requested size: 426.79135pt x 462.3136pt.
+LaTeX Info: Redefining \. on input line 457.
+LaTeX Info: Redefining \% on input line 457.
+ [18 <./img/leds.png>]
+<img/webcamPortatil.png, id=111, 4047.12pt x 1758.57pt>
 File: img/webcamPortatil.png Graphic file (type png)
 
 <use img/webcamPortatil.png>
-Package pdftex.def Info: img/webcamPortatil.png used on input line 471.
-(pdftex.def)             Requested size: 298.75264pt x 129.79404pt.
-
-<img/soportePlacas.png, id=97, 941.31676pt x 468.5505pt>
+Package pdftex.def Info: img/webcamPortatil.png used on input line 462.
+(pdftex.def)             Requested size: 384.1096pt x 166.90488pt.
+LaTeX Info: Redefining \. on input line 466.
+LaTeX Info: Redefining \% on input line 466.
+ [19 <./img/webCamAntigua.png>]
+<img/soportePlacas.png, id=116, 941.31676pt x 468.5505pt>
 File: img/soportePlacas.png Graphic file (type png)
 
 <use img/soportePlacas.png>
-Package pdftex.def Info: img/soportePlacas.png used on input line 480.
-(pdftex.def)             Requested size: 384.1096pt x 191.19182pt.
+Package pdftex.def Info: img/soportePlacas.png used on input line 471.
+(pdftex.def)             Requested size: 426.79135pt x 212.44011pt.
 
-<img/soporteImpreso.png, id=98, 2131.965pt x 2746.26pt>
+<img/soporteImpreso.png, id=117, 2131.965pt x 2746.26pt>
 File: img/soporteImpreso.png Graphic file (type png)
 
 <use img/soporteImpreso.png>
-Package pdftex.def Info: img/soporteImpreso.png used on input line 489.
-(pdftex.def)             Requested size: 213.39568pt x 274.85161pt.
-LaTeX Info: Redefining \. on input line 493.
-LaTeX Info: Redefining \% on input line 493.
- [16 <./img/webcamPortatil.png> <./img/soportePlacas.png>] <img/soporteImpresoT
-uercas.png, id=103, 2421.045pt x 2806.485pt>
+Package pdftex.def Info: img/soporteImpreso.png used on input line 480.
+(pdftex.def)             Requested size: 256.07741pt x 329.8303pt.
+LaTeX Info: Redefining \. on input line 484.
+LaTeX Info: Redefining \% on input line 484.
+ [20 <./img/webcamPortatil.png> <./img/soportePlacas.png>] <img/soporteImpresoT
+uercas.png, id=122, 2421.045pt x 2806.485pt>
 File: img/soporteImpresoTuercas.png Graphic file (type png)
 
 <use img/soporteImpresoTuercas.png>
-Package pdftex.def Info: img/soporteImpresoTuercas.png used on input line 498.
-(pdftex.def)             Requested size: 213.39568pt x 247.3483pt.
-
-<img/soporteConPlacas.png, id=104, 2320.67pt x 1501.61pt>
+Package pdftex.def Info: img/soporteImpresoTuercas.png used on input line 489.
+(pdftex.def)             Requested size: 256.07741pt x 296.80939pt.
+LaTeX Info: Redefining \. on input line 493.
+LaTeX Info: Redefining \% on input line 493.
+ [21 <./img/soporteImpreso.png>]
+<img/soporteConPlacas.png, id=127, 2320.67pt x 1501.61pt>
 File: img/soporteConPlacas.png Graphic file (type png)
 
 <use img/soporteConPlacas.png>
-Package pdftex.def Info: img/soporteConPlacas.png used on input line 507.
-(pdftex.def)             Requested size: 298.75264pt x 193.29149pt.
-LaTeX Info: Redefining \. on input line 511.
-LaTeX Info: Redefining \% on input line 511.
- [17 <./img/soporteImpreso.png> <./img/soporteImpresoTuercas.png>] <img/cocheCo
-nDesorden.png, id=110, 3862.43pt x 2754.29pt>
+Package pdftex.def Info: img/soporteConPlacas.png used on input line 498.
+(pdftex.def)             Requested size: 384.1096pt x 248.534pt.
+LaTeX Info: Redefining \. on input line 504.
+LaTeX Info: Redefining \% on input line 504.
+ [22 <./img/soporteImpresoTuercas.png> <./img/soporteConPlacas.png>] <img/coche
+ConDesorden.png, id=133, 3862.43pt x 2754.29pt>
 File: img/cocheConDesorden.png Graphic file (type png)
 
 <use img/cocheConDesorden.png>
-Package pdftex.def Info: img/cocheConDesorden.png used on input line 516.
-(pdftex.def)             Requested size: 298.75264pt x 213.035pt.
+Package pdftex.def Info: img/cocheConDesorden.png used on input line 507.
+(pdftex.def)             Requested size: 384.1096pt x 273.89014pt.
 
-<img/resultado.png, id=111, 3035.34pt x 1879.02pt>
+<img/resultado.png, id=134, 3035.34pt x 1879.02pt>
 File: img/resultado.png Graphic file (type png)
  <use img/resultado.png>
-Package pdftex.def Info: img/resultado.png used on input line 525.
+Package pdftex.def Info: img/resultado.png used on input line 516.
 (pdftex.def)             Requested size: 3035.33263pt x 1879.01544pt.
-LaTeX Info: Redefining \. on input line 529.
-LaTeX Info: Redefining \% on input line 529.
+LaTeX Info: Redefining \. on input line 528.
+LaTeX Info: Redefining \% on input line 528.
 
-[18 <./img/soporteConPlacas.png> <./img/cocheConDesorden.png>]
-<img/umlComunicacion.png, id=117, 1008.76875pt x 1643.13875pt>
+[23 <./img/cocheConDesorden.png> <./img/resultado.png>]
+<img/umlComunicacion.png, id=141, 1008.76875pt x 1643.13875pt>
 File: img/umlComunicacion.png Graphic file (type png)
 
 <use img/umlComunicacion.png>
-Package pdftex.def Info: img/umlComunicacion.png used on input line 564.
-(pdftex.def)             Requested size: 298.75264pt x 486.62723pt.
-LaTeX Info: Redefining \. on input line 568.
-LaTeX Info: Redefining \% on input line 568.
- [19 <./img/resultado.png>]
-LaTeX Info: Redefining \. on input line 578.
-LaTeX Info: Redefining \% on input line 578.
- [20 <./img/umlComunicacion.png>] <img/umlCambio.png, id=128, 1002.74625pt x 15
-52.80125pt>
+Package pdftex.def Info: img/umlComunicacion.png used on input line 555.
+(pdftex.def)             Requested size: 426.79135pt x 695.17818pt.
+LaTeX Info: Redefining \. on input line 559.
+LaTeX Info: Redefining \% on input line 559.
+ [24]
+Overfull \vbox (18.12427pt too high) has occurred while \output is active []
+
+LaTeX Info: Redefining \. on input line 559.
+LaTeX Info: Redefining \% on input line 559.
+
+[25 <./img/umlComunicacion.png>]
+<img/umlCambio.png, id=149, 1002.74625pt x 1552.80125pt>
 File: img/umlCambio.png Graphic file (type png)
 
 <use img/umlCambio.png>
-Package pdftex.def Info: img/umlCambio.png used on input line 584.
-(pdftex.def)             Requested size: 298.75264pt x 462.62161pt.
-LaTeX Info: Redefining \. on input line 590.
-LaTeX Info: Redefining \% on input line 590.
- [21 <./img/umlCambio.png>]
-LaTeX Info: Redefining \. on input line 620.
-LaTeX Info: Redefining \% on input line 620.
- [22]
-<img/procesadoUML.png, id=136, 531.1845pt x 1087.6635pt>
+Package pdftex.def Info: img/umlCambio.png used on input line 575.
+(pdftex.def)             Requested size: 426.79135pt x 660.9151pt.
+LaTeX Info: Redefining \. on input line 579.
+LaTeX Info: Redefining \% on input line 579.
+ [26]
+LaTeX Info: Redefining \. on input line 581.
+LaTeX Info: Redefining \% on input line 581.
+ [27 <./img/umlCambio.png>]
+LaTeX Info: Redefining \. on input line 610.
+LaTeX Info: Redefining \% on input line 610.
+ [28]
+<img/procesadoUML.png, id=161, 531.1845pt x 1087.6635pt>
 File: img/procesadoUML.png Graphic file (type png)
 
 <use img/procesadoUML.png>
-Package pdftex.def Info: img/procesadoUML.png used on input line 629.
-(pdftex.def)             Requested size: 298.75264pt x 611.75943pt.
-LaTeX Info: Redefining \. on input line 633.
-LaTeX Info: Redefining \% on input line 633.
- [23]
-Overfull \hbox (7.87984pt too wide) in paragraph at lines 641--642
+Package pdftex.def Info: img/procesadoUML.png used on input line 620.
+(pdftex.def)             Requested size: 341.43437pt x 699.156pt.
+LaTeX Info: Redefining \. on input line 624.
+LaTeX Info: Redefining \% on input line 624.
+ [29]
+Overfull \vbox (22.1021pt too high) has occurred while \output is active []
+
+LaTeX Info: Redefining \. on input line 624.
+LaTeX Info: Redefining \% on input line 624.
+
+[30 <./img/procesadoUML.png>]
+Overfull \hbox (7.87984pt too wide) in paragraph at lines 632--633
 \OT1/cmr/m/n/10.95 ni-da de un re-po-si-to-rio en Bit-buc-ket, lla-ma-da sim-pl
 eMJPG-View []NeuralAssembly,
  []
 
-LaTeX Info: Redefining \. on input line 642.
-LaTeX Info: Redefining \% on input line 642.
-[24 <./img/procesadoUML.png>] <img/inicio.png, id=144, 1027.84pt x 602.25pt>
+<img/inicio.png, id=170, 1027.84pt x 602.25pt>
 File: img/inicio.png Graphic file (type png)
+ <use img/inicio.png>
+Package pdftex.def Info: img/inicio.png used on input line 640.
+(pdftex.def)             Requested size: 426.79135pt x 250.07611pt.
 
-<use img/inicio.png>
-Package pdftex.def Info: img/inicio.png used on input line 649.
-(pdftex.def)             Requested size: 298.75264pt x 175.05237pt.
- <img/sin_conexion.png, id=145, 1027.84pt x 602.25pt>
+<img/sin_conexion.png, id=171, 1027.84pt x 602.25pt>
 File: img/sin_conexion.png Graphic file (type png)
 
 <use img/sin_conexion.png>
-Package pdftex.def Info: img/sin_conexion.png used on input line 656.
-(pdftex.def)             Requested size: 298.75264pt x 175.05237pt.
-LaTeX Info: Redefining \. on input line 660.
-LaTeX Info: Redefining \% on input line 660.
- [25 <./img/inicio.png>]
-<img/conectado.png, id=150, 1027.84pt x 602.25pt>
+Package pdftex.def Info: img/sin_conexion.png used on input line 647.
+(pdftex.def)             Requested size: 426.79135pt x 250.07611pt.
+LaTeX Info: Redefining \. on input line 651.
+LaTeX Info: Redefining \% on input line 651.
+ [31 <./img/inicio.png>]
+<img/conectado.png, id=175, 1027.84pt x 602.25pt>
 File: img/conectado.png Graphic file (type png)
  <use img/conectado.png>
-Package pdftex.def Info: img/conectado.png used on input line 663.
-(pdftex.def)             Requested size: 298.75264pt x 175.05237pt.
+Package pdftex.def Info: img/conectado.png used on input line 654.
+(pdftex.def)             Requested size: 426.79135pt x 250.07611pt.
 
-<img/opciones.png, id=151, 1027.84pt x 602.25pt>
+<img/opciones.png, id=176, 1027.84pt x 602.25pt>
 File: img/opciones.png Graphic file (type png)
  <use img/opciones.png>
-Package pdftex.def Info: img/opciones.png used on input line 670.
-(pdftex.def)             Requested size: 298.75264pt x 175.05237pt.
-LaTeX Info: Redefining \. on input line 685.
-LaTeX Info: Redefining \% on input line 685.
+Package pdftex.def Info: img/opciones.png used on input line 661.
+(pdftex.def)             Requested size: 426.79135pt x 250.07611pt.
+LaTeX Info: Redefining \. on input line 665.
+LaTeX Info: Redefining \% on input line 665.
 
-[26 <./img/sin_conexion.png> <./img/conectado.png> <./img/opciones.png>]
-LaTeX Info: Redefining \. on input line 710.
-LaTeX Info: Redefining \% on input line 710.
+[32 <./img/sin_conexion.png> <./img/conectado.png>]
+LaTeX Info: Redefining \. on input line 687.
+LaTeX Info: Redefining \% on input line 687.
+ [33 <./img/opciones.png>]
+LaTeX Info: Redefining \. on input line 716.
+LaTeX Info: Redefining \% on input line 716.
 
-[27]
-LaTeX Info: Redefining \. on input line 740.
-LaTeX Info: Redefining \% on input line 740.
- [28]
-LaTeX Info: Redefining \. on input line 745.
-LaTeX Info: Redefining \% on input line 745.
- [29]
+[34]
+LaTeX Info: Redefining \. on input line 736.
+LaTeX Info: Redefining \% on input line 736.
+ [35]
 Cap\'{\i }tulo 3.
-<img/ganttInicial.jpg, id=164, 447.47176pt x 237.88875pt>
+<img/ganttInicial.jpg, id=190, 447.47176pt x 237.88875pt>
 File: img/ganttInicial.jpg Graphic file (type jpg)
 
 <use img/ganttInicial.jpg>
-Package pdftex.def Info: img/ganttInicial.jpg used on input line 751.
+Package pdftex.def Info: img/ganttInicial.jpg used on input line 742.
 (pdftex.def)             Requested size: 447.47066pt x 237.88815pt.
+ [36
 
-<img/ganttInicial_2.jpg, id=165, 1286.406pt x 336.65775pt>
+]
+<img/ganttInicial_2.jpg, id=194, 1286.406pt x 336.65775pt>
 File: img/ganttInicial_2.jpg Graphic file (type jpg)
 
 <use img/ganttInicial_2.jpg>
-Package pdftex.def Info: img/ganttInicial_2.jpg used on input line 758.
+Package pdftex.def Info: img/ganttInicial_2.jpg used on input line 749.
 (pdftex.def)             Requested size: 1286.40288pt x 336.6569pt.
- [30
-
- <./img/ganttInicial.jpg>]
+LaTeX Info: Redefining \. on input line 753.
+LaTeX Info: Redefining \% on input line 753.
+ [37 <./img/ganttInicial.jpg>]
 Overfull \vbox (51.79816pt too high) has occurred while \output is active []
 
-LaTeX Info: Redefining \. on input line 762.
-LaTeX Info: Redefining \% on input line 762.
+LaTeX Info: Redefining \. on input line 753.
+LaTeX Info: Redefining \% on input line 753.
 
-[31 <./img/ganttInicial_2.jpg>]
-<img/ganttInicial_3.jpg, id=173, 1095.49275pt x 258.9675pt>
+[38 <./img/ganttInicial_2.jpg>]
+<img/ganttInicial_3.jpg, id=201, 1095.49275pt x 258.9675pt>
 File: img/ganttInicial_3.jpg Graphic file (type jpg)
 
 <use img/ganttInicial_3.jpg>
-Package pdftex.def Info: img/ganttInicial_3.jpg used on input line 765.
+Package pdftex.def Info: img/ganttInicial_3.jpg used on input line 756.
 (pdftex.def)             Requested size: 1095.49008pt x 258.96684pt.
 
 Overfull \vbox (40.1419pt too high) has occurred while \output is active []
 
-LaTeX Info: Redefining \. on input line 769.
-LaTeX Info: Redefining \% on input line 769.
+LaTeX Info: Redefining \. on input line 760.
+LaTeX Info: Redefining \% on input line 760.
 
-[32 <./img/ganttInicial_3.jpg>]
-<img/ganttFinal.png, id=177, 578.76225pt x 237.88875pt>
+[39 <./img/ganttInicial_3.jpg>]
+<img/ganttFinal.png, id=205, 578.76225pt x 237.88875pt>
 File: img/ganttFinal.png Graphic file (type png)
 
 <use img/ganttFinal.png>
-Package pdftex.def Info: img/ganttFinal.png used on input line 791.
+Package pdftex.def Info: img/ganttFinal.png used on input line 782.
 (pdftex.def)             Requested size: 578.76083pt x 237.88815pt.
-LaTeX Info: Redefining \. on input line 795.
-LaTeX Info: Redefining \% on input line 795.
- [33]
-<img/ganttFinal2.png, id=181, 908.193pt x 221.02576pt>
+LaTeX Info: Redefining \. on input line 786.
+LaTeX Info: Redefining \% on input line 786.
+ [40]
+<img/ganttFinal2.png, id=209, 908.193pt x 221.02576pt>
 File: img/ganttFinal2.png Graphic file (type png)
 
 <use img/ganttFinal2.png>
-Package pdftex.def Info: img/ganttFinal2.png used on input line 798.
+Package pdftex.def Info: img/ganttFinal2.png used on input line 789.
 (pdftex.def)             Requested size: 908.19078pt x 221.0252pt.
-LaTeX Info: Redefining \. on input line 802.
-LaTeX Info: Redefining \% on input line 802.
- [34 <./img/ganttFinal.png>]
+LaTeX Info: Redefining \. on input line 793.
+LaTeX Info: Redefining \% on input line 793.
+ [41 <./img/ganttFinal.png>]
 Overfull \vbox (19.4367pt too high) has occurred while \output is active []
 
-LaTeX Info: Redefining \. on input line 802.
-LaTeX Info: Redefining \% on input line 802.
+LaTeX Info: Redefining \. on input line 793.
+LaTeX Info: Redefining \% on input line 793.
 
-[35 <./img/ganttFinal2.png>]
-<img/ganttFinal3.png, id=188, 959.38425pt x 142.131pt>
+[42 <./img/ganttFinal2.png>]
+<img/ganttFinal3.png, id=217, 959.38425pt x 142.131pt>
 File: img/ganttFinal3.png Graphic file (type png)
 
 <use img/ganttFinal3.png>
-Package pdftex.def Info: img/ganttFinal3.png used on input line 805.
+Package pdftex.def Info: img/ganttFinal3.png used on input line 796.
 (pdftex.def)             Requested size: 959.3819pt x 142.13063pt.
 
 Overfull \vbox (38.17468pt too high) has occurred while \output is active []
 
-LaTeX Info: Redefining \. on input line 809.
-LaTeX Info: Redefining \% on input line 809.
+LaTeX Info: Redefining \. on input line 800.
+LaTeX Info: Redefining \% on input line 800.
 
-[36 <./img/ganttFinal3.png>]
-<img/ganttFinal4.png, id=192, 1220.76076pt x 258.9675pt>
+[43 <./img/ganttFinal3.png>]
+<img/ganttFinal4.png, id=221, 1220.76076pt x 258.9675pt>
 File: img/ganttFinal4.png Graphic file (type png)
 
 <use img/ganttFinal4.png>
-Package pdftex.def Info: img/ganttFinal4.png used on input line 812.
+Package pdftex.def Info: img/ganttFinal4.png used on input line 803.
 (pdftex.def)             Requested size: 1220.75778pt x 258.96684pt.
 
 Overfull \vbox (22.15475pt too high) has occurred while \output is active []
 
-LaTeX Info: Redefining \. on input line 816.
-LaTeX Info: Redefining \% on input line 816.
+LaTeX Info: Redefining \. on input line 807.
+LaTeX Info: Redefining \% on input line 807.
 
-[37 <./img/ganttFinal4.png>]
-<img/variacionFechas.png, id=197, 363.15675pt x 69.861pt>
+[44 <./img/ganttFinal4.png>]
+<img/variacionFechas.png, id=225, 363.15675pt x 69.861pt>
 File: img/variacionFechas.png Graphic file (type png)
 
 <use img/variacionFechas.png>
-Package pdftex.def Info: img/variacionFechas.png used on input line 819.
-(pdftex.def)             Requested size: 298.75264pt x 57.47612pt.
+Package pdftex.def Info: img/variacionFechas.png used on input line 810.
+(pdftex.def)             Requested size: 426.79135pt x 82.10904pt.
 
-<img/variacionDuracion.png, id=198, 255.354pt x 40.953pt>
+<img/variacionDuracion.png, id=226, 255.354pt x 40.953pt>
 File: img/variacionDuracion.png Graphic file (type png)
 
 <use img/variacionDuracion.png>
-Package pdftex.def Info: img/variacionDuracion.png used on input line 826.
-(pdftex.def)             Requested size: 298.75264pt x 47.9148pt.
+Package pdftex.def Info: img/variacionDuracion.png used on input line 817.
+(pdftex.def)             Requested size: 426.79135pt x 68.44997pt.
 
-<img/graficaComparativaTiempo.png, id=199, 631.158pt x 332.442pt>
+<img/graficaComparativaTiempo.png, id=227, 631.158pt x 332.442pt>
 File: img/graficaComparativaTiempo.png Graphic file (type png)
 
 <use img/graficaComparativaTiempo.png>
-Package pdftex.def Info: img/graficaComparativaTiempo.png used on input line 83
-3.
-(pdftex.def)             Requested size: 298.75264pt x 157.35359pt.
-LaTeX Info: Redefining \. on input line 856.
-LaTeX Info: Redefining \% on input line 856.
- [38 <./img/variacionFechas.png> <./img/variacionDuracion.png> <./img/graficaCo
+Package pdftex.def Info: img/graficaComparativaTiempo.png used on input line 82
+4.
+(pdftex.def)             Requested size: 426.79135pt x 224.79446pt.
+LaTeX Info: Redefining \. on input line 839.
+LaTeX Info: Redefining \% on input line 839.
+ [45 <./img/variacionFechas.png> <./img/variacionDuracion.png> <./img/graficaCo
 mparativaTiempo.png>]
-LaTeX Info: Redefining \. on input line 900.
-LaTeX Info: Redefining \% on input line 900.
- [39]
-LaTeX Info: Redefining \. on input line 913.
-LaTeX Info: Redefining \% on input line 913.
- [40] [41
+LaTeX Info: Redefining \. on input line 876.
+LaTeX Info: Redefining \% on input line 876.
+ [46]
+LaTeX Info: Redefining \. on input line 904.
+LaTeX Info: Redefining \% on input line 904.
+ [47] [48
 
 ]
-[42
+[49
 
 ] (memoria.bbl
 Underfull \hbox (badness 5260) in paragraph at lines 42--58
@@ -1261,31 +1293,37 @@ Underfull \hbox (badness 6825) in paragraph at lines 179--195
 /n/10.95 Ins-ti-tu-to Na-cio-nal de Es-tadsti-ca.  Des-
  []
 
-) [43
+[50
 
-] <img/capturaPrimerVideoApp.png, id=222, 1284.8pt x 730.73pt>
+])
+LaTeX Info: Redefining \. on input line 930.
+LaTeX Info: Redefining \% on input line 930.
+ [51] <img/capturaPrimerVideoApp.png, id=253, 1284.8pt x 730.73pt>
 File: img/capturaPrimerVideoApp.png Graphic file (type png)
 
 <use img/capturaPrimerVideoApp.png>
-Package pdftex.def Info: img/capturaPrimerVideoApp.png used on input line 955.
-(pdftex.def)             Requested size: 277.41176pt x 157.77289pt.
+Package pdftex.def Info: img/capturaPrimerVideoApp.png used on input line 946.
+(pdftex.def)             Requested size: 426.79135pt x 242.7361pt.
 
-<img/testLeds.png, id=223, 1156.32pt x 650.43pt>
+<img/testLeds.png, id=254, 1156.32pt x 650.43pt>
 File: img/testLeds.png Graphic file (type png)
  <use img/testLeds.png>
-Package pdftex.def Info: img/testLeds.png used on input line 967.
-(pdftex.def)             Requested size: 277.41176pt x 156.03691pt.
+Package pdftex.def Info: img/testLeds.png used on input line 958.
+(pdftex.def)             Requested size: 426.79135pt x 240.06976pt.
 
-[44
+[52
 
- <./img/capturaPrimerVideoApp.png> <./img/testLeds.png>] (memoria.aux
+ <./img/capturaPrimerVideoApp.png>]
+LaTeX Info: Redefining \. on input line 970.
+LaTeX Info: Redefining \% on input line 970.
+ [53 <./img/testLeds.png>] (memoria.aux
 LaTeX Info: Redefining \. on input line 7.
 LaTeX Info: Redefining \% on input line 7.
 ) ) 
 Here is how much of TeX's memory you used:
  7567 strings out of 493333
  101876 string characters out of 3135747
- 189399 words of memory out of 3000000
+ 189400 words of memory out of 3000000
  10877 multiletter control sequences out of 15000+200000
  18290 words of font info for 54 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -1302,9 +1340,9 @@ os de programas/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><D:/Archivos
  de programas/MiKTeX 2.9/fonts/type1/public/eurosym/feymr10.pfb><D:/Archivos de
  programas/MiKTeX 2.9/fonts/type1/public/amsfonts/latxfont/lasy10.pfb><D:/Archi
 vos de programas/MiKTeX 2.9/fonts/type1/urw/helvetic/uhvb8a.pfb>
-Output written on memoria.pdf (50 pages, 84899459 bytes).
+Output written on memoria.pdf (61 pages, 84895306 bytes).
 PDF statistics:
- 266 PDF objects out of 1000 (max. 8388607)
+ 301 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  191 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -2,14 +2,16 @@
 \usepackage [spanish] {babel} 
 \usepackage[utf8]{inputenc}
 \usepackage{eurosym}
-\usepackage{graphicx}
+%\usepackage{graphicx}
 \usepackage{float}
 \usepackage{enumerate} 
 \usepackage{url}
 %\usepackage{hyperref}
+\usepackage{apacite}
 
 \begin{document}
 \pagenumbering{arabic}
+\setlength{\parskip}{4ex}
 \tipo{Grado}   % Grado o M\'aster
 \titulopro{Control de un coche mediante Raspberry Pi}
 \tutor{Manuel Jesús Domínguez Morales}
@@ -38,6 +40,7 @@ Mis más sinceros agradecimientos a:
 	\item Juan Manuel Gutierrez Romero
 	\item José Antonio (Villa)
 	\item Antonio Cordero Sánchez
+	\item María del Mar Bernal Masteo
 	
 \end{itemize}
  
@@ -45,15 +48,11 @@ Mis más sinceros agradecimientos a:
 
 Este proyecto se enmarca en un entorno de hardware principalmente, en el que se pretende implementar el control total sobre un vehículo. En nuestro caso, se ha implementado el control manual de un vehículo prototipo, basado en un coche radio control ya que implementarlo en un coche real era costoso y peligroso. Este control se ha desarrollado en una aplicación para dispositivos basados en Android. Además, se quiso diseñar un sistema lo más modular posible y barato, con lo que desde un principio se adoptó la decisión de implementar el proyecto en torno al miniPC Raspberry Pi, en concreto la versión 3 modelo B. Después de varios fallos, se incluyó en el sistema un Arduino Nano para solucionar varios errores.
 
-\medspace
-\medspace
-\medspace
+
 
 Desde el primer momento se desarrolla el proyecto con la idea de automatizar el control del vehículo. Tras numerosos fallos y la falta de tiempo, se ha tenido que dejar la automatización completa en una pequeña parte de esta. Al principio se pensó en implementar el seguimiento de una línea mediante imágenes, pero al final se ha implementado una detección de personas que permiten la circulación o no del vehículo. En este caso, se ha desarrollado un script en PC el cual se encarga de la funcionalidad que acabamos de comentar.
 
-\medspace
-\medspace
-\medspace
+
 
 Con esto se pretendía desarrollar contenidos no vistos durante el Grado en Ingeniería Informática - Tecnologías Informáticas y además ahondar en el tema de control de automóviles. Además se pretendía aprender sobre el control de sistemas en tiempo real y obtener aptitudes que no se enmarcan en nuestros estudios en la universidad.
 
@@ -66,17 +65,9 @@ around the miniPC Raspberry Pi, specifically, version 3 model B.
 After several failures, it was included in the system an Arduino Nano in order to solve several errors.
 
 
-\medspace
-\medspace
-\medspace
-
-
 From the very first moment the project is developed with the idea of automating the control of the vehicle. After numerous failures and due to a lack of time, it has had to leave the complete automation in a small part of it. At the beginning, it was thought to implement the tracking of a line by means of images, but, in the end, it has been implemented a people detection that allows the circulation or not of the vehicle. 
 In this case, a script has been developed in PC which is in charge of the functionality that we have just commented.
 
-\medspace
-\medspace
-\medspace
 
 This was intended to develop unseen content during the Grado en Ingeniería Informática - Tecnologías Informáticas and, furthermore, to go deeper into the subject of automobile control. 
 In addition, it was intended to learn about the real-time systems control and to obtain skills that are not part of our university studies.
@@ -271,7 +262,7 @@ Este producto, el cual está diseñado para espiar, no para el disfrute del mode
 
 \begin{figure}[H]
   \centering
-    \includegraphics[width=1.1\textwidth]{img/producto2}
+    \includegraphics[width=1.2\textwidth]{img/producto2}
   \caption{BMW X6}
   \label{fig:BMWX6}
 \end{figure}
@@ -297,7 +288,7 @@ En la imágen que sigue se muestra a muy alto nivel los módulos de los que esta
 
 	\begin{figure}[H]
 		\centering
-		\includegraphics[width=0.90\textwidth]{img/diseno}
+		\includegraphics[width=1\textwidth]{img/diseno}
 		\caption{Diagrama del diseño básico del proyecto}
 		\label{fig:diseno}
 	\end{figure}
@@ -385,7 +376,7 @@ A continuación se mostrará el coche sin ningún tipo de modificación:
 
 \begin{figure}[H]
   \centering
-    \includegraphics[width=0.7\textwidth]{img/A959}
+    \includegraphics[width=1\textwidth]{img/A959}
   \caption{Coche sin desmontar}
   \label{fig:CocheSin}
 \end{figure}
@@ -394,7 +385,7 @@ En la siguiente figura, se muestran las piezas eliminadas del prototipo:
 
 \begin{figure}[H]
   \centering
-    \includegraphics[width=0.7\textwidth]{img/piezasSustituidas}
+    \includegraphics[width=1\textwidth]{img/piezasSustituidas}
   \caption{Piezas sustituidas}
   \label{fig:PiezasSusti}
 \end{figure}
@@ -403,7 +394,7 @@ En la imagen que sigue, se muestra el prototipo con las nuevas piezas instaladas
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=0.7\textwidth]{img/piezasNuevas}
+	\includegraphics[width=0.8\textwidth]{img/piezasNuevas}
 	\caption{Piezas nuevas en su ubicación}
 	\label{fig:PiezasNuevas}
 \end{figure}
@@ -412,7 +403,7 @@ En cuanto al hardware utilizado, inicialmente se planificó el uso de una Raspbe
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=0.7\textwidth]{img/raspArd}
+	\includegraphics[width=0.9\textwidth]{img/raspArd}
 	\caption{Raspberry y Arduino usados}
 	\label{fig:RaspArd}
 \end{figure}
@@ -421,7 +412,7 @@ Como anteriormente hemos comentado, el Arduino se encarga de las funciones de co
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=0.9\textwidth]{img/conexionado}
+	\includegraphics[angle=90,width=0.8\textwidth]{img/conexionado}
 	\caption{Conexionado}
 	\label{fig:conexionado}
 \end{figure}
@@ -432,7 +423,7 @@ Para evitar tener tanta cantidad de cables, diseñamos e implementamos una PCB p
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=0.7\textwidth]{img/pcb}
+	\includegraphics[width=0.9\textwidth]{img/pcb}
 	\caption{PCB}
 	\label{fig:pcb}
 \end{figure}
@@ -450,7 +441,7 @@ La imagen que sigue muestra dichos LEDs y su emplazamiento.
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=0.7\textwidth]{img/leds}
+	\includegraphics[width=1\textwidth]{img/leds}
 	\caption{LEDs y su emplazamiento}
 	\label{fig:leds}
 \end{figure}
@@ -459,7 +450,7 @@ La imagen que sigue muestra dichos LEDs y su emplazamiento.
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=0.7\textwidth]{img/webCamAntigua}
+	\includegraphics[width=1\textwidth]{img/webCamAntigua}
 	\caption{WebCam Antigua}
 	\label{fig:webcamvieja}
 \end{figure}
@@ -468,7 +459,7 @@ Después de hablar con una de las personas nombradas en los agradecimientos, lle
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=0.7\textwidth]{img/webcamPortatil}
+	\includegraphics[width=0.9\textwidth]{img/webcamPortatil}
 	\caption{WebCam portátil}
 	\label{fig:webcamportatil}
 \end{figure}
@@ -477,7 +468,7 @@ Llegados a este punto, se hizo necesario buscar la forma de compactar las placas
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=0.9\textwidth]{img/soportePlacas}
+	\includegraphics[width=1\textwidth]{img/soportePlacas}
 	\caption{Placa diseñada 3D para el soporte de la Raspberrry y el Arduino}
 	\label{fig:soporteplacas}
 \end{figure}
@@ -486,7 +477,7 @@ A continuación vemos el resultado de dicho diseño, después de una hora de imp
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=0.5\textwidth]{img/soporteImpreso}
+	\includegraphics[width=0.6\textwidth]{img/soporteImpreso}
 	\caption{Placa impresa en 3D}
 	\label{fig:soporteplacasimpreso}
 \end{figure}
@@ -495,7 +486,7 @@ Luego montamos la tornillería necesaria para atornillar la Raspberry Pi y el Ar
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=0.5\textwidth]{img/soporteImpresoTuercas}
+	\includegraphics[width=0.6\textwidth]{img/soporteImpresoTuercas}
 	\caption{Placa impresa en 3D con la tornillería necesaria}
 	\label{fig:soporteplacasimpresotuercas}
 \end{figure}
@@ -504,7 +495,7 @@ Después de montar la tornillería, añadimos ambos dispositivos, tanto la Raspb
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=0.7\textwidth]{img/soporteConPlacas}
+	\includegraphics[width=0.9\textwidth]{img/soporteConPlacas}
 	\caption{Placa impresa en 3D con los dispositivos montados}
 	\label{fig:soporteconplacas}
 \end{figure}
@@ -513,7 +504,7 @@ En la siguiente imagen mostramos como estaba el prototipo antes de utilizar dich
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=0.7\textwidth]{img/cocheConDesorden}
+	\includegraphics[width=0.9\textwidth]{img/cocheConDesorden}
 	\caption{Prototipo sin montar la placa de soporte}
 	\label{fig:cochesinsoporte}
 \end{figure}
@@ -522,7 +513,7 @@ A continuación, como la placa estaba diseñada para encajar perfectamente en el
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[angle=180,width=0.7\textwidth]{img/resultado}
+	\includegraphics[angle=180,width=0.9\textwidth]{img/resultado}
 	\caption{Prototipo resultante con todo montado}
 	\label{fig:cochesResultante}
 \end{figure}
@@ -561,7 +552,7 @@ A continuación, como la placa estaba diseñada para encajar perfectamente en el
 	
 	\begin{figure}[H]
 		\centering
-		\includegraphics[width=0.7\textwidth]{img/umlComunicacion}
+		\includegraphics[width=1\textwidth]{img/umlComunicacion}
 		\caption{UML de la verificación de la comunicación con Arduino}
 		\label{fig:arduinoVerificacion}
 	\end{figure}
@@ -581,7 +572,7 @@ A continuación, como la placa estaba diseñada para encajar perfectamente en el
 	
 	\begin{figure}[H]
 		\centering
-		\includegraphics[width=0.7\textwidth]{img/umlCambio}
+		\includegraphics[width=1\textwidth]{img/umlCambio}
 		\caption{UML de la comunicación del cambio de tracción/freno y dirección}
 		\label{fig:arduinoCambios}
 	\end{figure}
@@ -606,13 +597,13 @@ A continuación, como la placa estaba diseñada para encajar perfectamente en el
 	
 	Al final de todo y tras llevar a cabo bastantes pruebas, decidimos convertir el script en un servicio que se inicie cuando encendemos la Raspberry sin necesidad de conectarnos a ella para iniciar dicho script.	\cite{servicio}
 	
-	\medskip
+
 	
 	\item Servicio streaming vídeo
 	
 	Para transmitir el vídeo en vivo hemos utilizado mjpg-streamer, un servicio de streaming de vídeo que consume pocos recursos, dado que estamos trabajando en la Raspberry, que nos limita mucho. Este además tiene internamente un servidor http para servir las imágenes o vídeos en directo. Esto facilitará mucho el consumo de las imágenes en una posible aplicación de escritorio o en la aplicación Android.
 	
-	\medskip
+	
 	
 	\item Procesado de imágenes
 	
@@ -626,7 +617,7 @@ A continuación, como la placa estaba diseñada para encajar perfectamente en el
 		
 		\begin{figure}[H]
 			\centering
-			\includegraphics[width=0.7\textwidth]{img/procesadoUML}
+			\includegraphics[width=0.8\textwidth]{img/procesadoUML}
 			\caption{UML del procesado de imágenes}
 			\label{fig:procesadoUML}
 		\end{figure}
@@ -646,28 +637,28 @@ A continuación, como la placa estaba diseñada para encajar perfectamente en el
 	
 	\begin{figure}[H]
 		\centering
-		\includegraphics[width=0.7\textwidth]{img/inicio}
+		\includegraphics[width=1\textwidth]{img/inicio}
 		\caption{Captura de la pantalla de inicio de la aplicación}
 		\label{fig:capturaInicio}
 	\end{figure}
 
 	\begin{figure}[H]
 		\centering
-		\includegraphics[width=0.7\textwidth]{img/sin_conexion}
+		\includegraphics[width=1\textwidth]{img/sin_conexion}
 		\caption{Captura de la pantalla principal de la aplicación sin conexión}
 		\label{fig:capturaSinConexion}
 	\end{figure}
 
 	\begin{figure}[H]
 		\centering
-		\includegraphics[width=0.7\textwidth]{img/conectado}
+		\includegraphics[width=1\textwidth]{img/conectado}
 		\caption{Captura de la pantalla principal de la aplicación funcionando}
 		\label{fig:capturaConConexion}
 	\end{figure}
 	
 	\begin{figure}[H]
 		\centering
-		\includegraphics[width=0.7\textwidth]{img/opciones}
+		\includegraphics[width=1\textwidth]{img/opciones}
 		\caption{Captura de la pantalla de opciones de la aplicación}
 		\label{fig:capturaOpciones}
 	\end{figure}
@@ -816,21 +807,21 @@ A continuación detallaremos una planificación financiera a priori:
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=0.7\textwidth]{img/variacionFechas}
+	\includegraphics[width=1\textwidth]{img/variacionFechas}
 	\caption{Esquema de variación de fechas}
 	\label{fig:variacionFechas}
 \end{figure}
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=0.7\textwidth]{img/variacionDuracion}
+	\includegraphics[width=1\textwidth]{img/variacionDuracion}
 	\caption{Esquema de variación de la duración del proyecto}
 	\label{fig:variacionDuracion}
 \end{figure}
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=0.7\textwidth]{img/graficaComparativaTiempo}
+	\includegraphics[width=1\textwidth]{img/graficaComparativaTiempo}
 	\caption{Gráfica comparativa del trabajo previsto y real}
 	\label{fig:graficaComparativa}
 \end{figure}
@@ -952,7 +943,7 @@ A continuación detallaremos una planificación financiera a posteriori:
 			\item Primer vídeo de prueba con la aplicación:
 				\begin{figure}[H]
 					\centering
-					\includegraphics[width=0.65\textwidth]{img/capturaPrimerVideoApp}
+					\includegraphics[width=1\textwidth]{img/capturaPrimerVideoApp}
 					\caption{Captura del vídeo de prueba con la aplicación}
 					\label{fig:capturaPrimerVideoApp}
 				\end{figure}
@@ -964,7 +955,7 @@ A continuación detallaremos una planificación financiera a posteriori:
 				
 				\begin{figure}[H]
 					\centering
-					\includegraphics[width=0.65\textwidth]{img/testLeds}
+					\includegraphics[width=1\textwidth]{img/testLeds}
 					\caption{Captura del vídeo de prueba de los LEDs y el tiempo de encendido}
 					\label{fig:capturaLeds}
 				\end{figure}
