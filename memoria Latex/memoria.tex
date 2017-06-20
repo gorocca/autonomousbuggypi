@@ -231,6 +231,27 @@ Para todos los niveles de automatización, incluso en los más altos, el estánd
 \end{itemize}
 
 \section{Objetivos del proyecto}
+
+A continuación expondremos los objetivos del proyecto. En primer lugar veamos los objetivos a nivel profesional:
+\begin{itemize}
+	\item Controlar un coche mediante una Raspberry Pi. Implementaremos un coche, a escala, tomando uno que era antes de radio control, que sea controlado mediante una Raspberry Pi. Esta será la encargada de procesar todas las instrucciones que el usuario envíe y actuar conforme a estas. El servicio para recibir estas instrucciones será implementado mediante un servicio en red, red a la que deberemos de acceder mediante la emisión de una señal WiFi que deberá hacer la Raspberry. Además tendrá que enviar imágenes en directo para que los clientes puedan conducir remotamente.
+	
+	\item Aplicación Android. Para controlar el coche, diseñaremos una aplicación Android encargada del control del coche. Esta usará el acelerómetro para controlar la dirección del coche, girando de lado a lado. Para el control del acelerador/freno, necesitaremos usar un slider para que sea más cómodo. La aplicación se conectará a través del WiFi a la Raspberry. Además, deberá de recibir el streaming de vídeo que emitiremos desde la Raspberry.
+	
+	\item Automatización. Se deberá implementar una aplicación que permita una pequeña automatización del coche. Se deberá de procesar las imágenes que el streaming emite mediante la Raspberry y detectar personas. Cuando estas sean detectadas, el coche deberá cesar su actividad, o sea, pararse.
+\end{itemize}
+
+Una vez descritos los objetivos a nivel profesional pasaremos a ver los objetivos de nivel educacional:
+\begin{itemize}
+	\item Trabajar con sistemas en tiempo real. En este tipo de sistemas, es muy importante el tiempo de reacción, luego deberá de ajustarse lo máximo al tiempo real para que funcione correctamente.
+	
+	\item Aprender el manejo de pines de entrada/salida. También debemos aprender a usar los pines de entrada/salida para generar señales PWM para el control de la dirección y de la tracción/freno. Además debemos saber usarlas como salidas analógicas para el control del encendido de los LEDs indicadores del estado.
+	
+	\item Diseñar protocolos de comunicación. Implementaremos varios protocolos de comunicación, para controlar el sistema de la manera más fácil posible y que además sea independiente del cliente, o sea, que tenga versatilidad en que los clientes puedan manejar varios tipos de dispositivos y que puedan funcionar independientemente del Sistema Operativo o el Hardware que tengan.
+	
+	\item Aprender a diseñar aplicaciones Android para el control de dispositivos. Como antes comentamos, debemos aprender a diseñar aplicaciones para Android principalmente y en concreto, para manejar conexiones de red, manejar sensores de aceleración y como no, recibir vídeo y mostrarlo.
+	
+\end{itemize}
 \section{Estado del arte}
 El radio control nace en 1894 de la mano de Guillermo Marconi, el cual, realizó un experimento en el cual se accionaba una campanilla sin necesidad de hacer uso de un cable de cobre como en el telégrafo, muy usado en esa época. Este experimento no hubiese sido posible sin que antes otros científicos como Maxwell, teoría de la existencia de las ondas electromagnéticas, Hertz, experimentos centrados en la emisión de descargas, y Rumkorff no hubiesen descubierto los fenómenos de radiación e inducción.
 
@@ -273,6 +294,83 @@ Este producto se parece más a nuestro proyecto, podemos disfrutar del modelismo
 
 
 \section{Elicitación de requisitos y análisis de riesgos}
+
+\begin{itemize}
+	\item Requisitos
+	
+	A continuación detallaremos los requisitos Hardware:
+
+	\begin{itemize}
+		\item Raspberry Pi 3 modelo B
+		\item WebCam
+		\item Coche radio control
+		\item Arduino
+	\end{itemize}
+
+	Tras ello vamos a enumerar los requisitos Software pertinentes:
+	\begin{itemize}
+		\item Servidor de instrucciones escrito en Python
+			\begin{itemize}
+				\item Conexión de datos. Necesitaremos una conexión donde mandar las instrucciones.
+				\item Indicación de estado. Tendremos que mostrar el estado en el que se encuentra el sistema.
+				\item Garantizar la parada. Ante la desconexión por algún motivo de un cliente debemos parar el coche.
+				\item Solo un único cliente. Debemos exigir que solo puede haber un cliente a la vez conectado y que no se aceptan más conexiones entrantes.
+			\end{itemize}
+		\item Servidor de vídeo streaming
+		\item Servidor DHCP
+		\item Servicio de puntos de acceso WiFi
+		\item Controlador de servo y tracción/freno en Arduino
+			\begin{itemize}
+				\item Exigir la conexión con Arduino. Hay que validar que Arduino está conectado con Raspberry correctamente y la comunicación es efectiva.
+				\item Aceptar solo instrucciones válidas.
+			\end{itemize}
+		\item Aplicación Android
+			\begin{itemize}
+				\item Desconexión. Hay que hacer que el servidor vuelva al estado de espera al cerrar la aplicación.
+				\item Gestión de la red. Hay que evitar mandar instrucciones no necesarias para no colapsar la red ni el servicio.
+			\end{itemize}
+	\end{itemize}
+
+	\item Análisis de los riesgos
+		
+	En cuanto al Hardware los riesgos que se han tenido en cuenta son la posibilidad de que Raspberry no pudiese gestionar todas las tareas que se le iban a exigir. Para ello se tomó la decisión de que la parte más básica de controlar al coche fuese tarea de Arduino, que se encargará de manejar los PWM que manejan servo y variador.
+	
+	Por su parte, en el Software, vamos a ver punto por punto las medidas a tomar:
+	
+	\begin{itemize}
+		\item Servidor de instrucciones escrito en Python
+		\begin{itemize}
+			\item Conexión de datos. Se implementará una conexión sobre sockets TCP en el puerto 10000 para poder mandar las instrucciones.
+			\item Indicación de estado. El estado se mostrará mediante varios diodos LEDs con un código de colores que más adelante detallaremos.
+			\item Garantizar la parada. Teniendo en cuenta en el código las distintas formas de parada, cuando se recibe una de ellas, se manda a Arduino una instrucción para parar inmediatamente.
+			\item Solo un único cliente. Solo se creará un bucle de espera y conexión, luego cuando está conectado no se acepta ninguna conexión nueva entrante.
+		\end{itemize}
+		\item Servidor de vídeo streaming. Se utilizará el Software MJPG-Streamer para crear el servicio y transmitir vídeo.
+		\item Servidor DHCP. Para ello se instalará el Sofware Udhcpd, que está orientado a sistemas empotrados.
+		\item Servicio de puntos de acceso WiFi. Se utilizará el paquete Hostapd para crear el punto de acceso WiFi desde la Raspberry.
+		\item Controlador de servo y tracción/freno en Arduino
+		\begin{itemize}
+			\item Exigir la conexión con Arduino. Se ejecutará un protocolo de comunicación entre Raspberry y Arduino, en el cual se utilizará una especie de handshaking para comprobar el correcto funcionamiento de ambos dispositivos. Tras el handshaking, se pasará al intercambio de instrucciones.
+			\item Aceptar solo instrucciones válidas. Para ello se llevará a cabo un protocolo en el que las instrucciones tienen un formato bien definido, con un delimitador inicial y otro final, con lo que solo se aceptará lo que va dentro, además de que aparezca la coma como delimitador de los dos números a enviar. Más adelante se detallará su implementación.
+		\end{itemize}
+		\item Aplicación Android
+		\begin{itemize}
+			\item Desconexión. Al desconectar se envía un vacío, detectado por el servidor, que lo hace volver al estado de espera de nueva conexión.
+			\item Gestión de la red. Se limitará el número de instrucciones de dos maneras:
+				\begin{itemize}
+					\item Por repetición: Al implementarse sobre el acelerómetro uno de los controles, continuamente estará leyendo valores, por tanto siempre se guarda la instrucción que se envió antes, y si esta es igual que la nueva, no se envía nada.
+					
+					\item Por valores: En este caso afecta por igual a los dos controles:
+						\begin{enumerate}
+							\item Aclerómetro: para el control de dirección se usará el acelerómetro que devuelve un número con muchos decimales. Para ello se ha truncado el número y además se ha separado en un rango cerrado de posibles valores.
+							\item Slider: el mismo problema que el anterior, así que la misma solución, truncar, limitar el recorrido y adaptar el número.
+						\end{enumerate}
+				\end{itemize}
+		\end{itemize}
+	\end{itemize}
+
+\end{itemize}
+
 
 
 \chapter{BLOQUE 2: EJECUCIÓN DEL PROYECTO}
