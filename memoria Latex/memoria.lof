@@ -22,21 +22,29 @@
 \contentsline {figure}{\numberline {2.17}{\ignorespaces UML de la verificaci\IeC {\'o}n de la comunicaci\IeC {\'o}n con Arduino}}{28}
 \contentsline {figure}{\numberline {2.18}{\ignorespaces UML de la comunicaci\IeC {\'o}n del cambio de tracci\IeC {\'o}n/freno y direcci\IeC {\'o}n}}{30}
 \contentsline {figure}{\numberline {2.19}{\ignorespaces UML del procesado de im\IeC {\'a}genes}}{33}
-\contentsline {figure}{\numberline {2.20}{\ignorespaces Captura de la pantalla de inicio de la aplicaci\IeC {\'o}n}}{34}
-\contentsline {figure}{\numberline {2.21}{\ignorespaces Captura de la pantalla principal de la aplicaci\IeC {\'o}n sin conexi\IeC {\'o}n}}{35}
-\contentsline {figure}{\numberline {2.22}{\ignorespaces Captura de la pantalla principal de la aplicaci\IeC {\'o}n funcionando}}{35}
-\contentsline {figure}{\numberline {2.23}{\ignorespaces Captura de la pantalla de opciones de la aplicaci\IeC {\'o}n}}{36}
+\contentsline {figure}{\numberline {2.20}{\ignorespaces Captura aplicaci\IeC {\'o}n procesando im\IeC {\'a}genes}}{34}
+\contentsline {figure}{\numberline {2.21}{\ignorespaces Captura de la pantalla de inicio de la aplicaci\IeC {\'o}n}}{35}
+\contentsline {figure}{\numberline {2.22}{\ignorespaces Captura de la pantalla principal de la aplicaci\IeC {\'o}n sin conexi\IeC {\'o}n}}{35}
+\contentsline {figure}{\numberline {2.23}{\ignorespaces Captura de la pantalla principal de la aplicaci\IeC {\'o}n funcionando}}{36}
+\contentsline {figure}{\numberline {2.24}{\ignorespaces Captura de la pantalla de opciones de la aplicaci\IeC {\'o}n}}{36}
+\contentsline {figure}{\numberline {2.25}{\ignorespaces Encuesta 1}}{39}
+\contentsline {figure}{\numberline {2.26}{\ignorespaces Encuesta 2}}{40}
+\contentsline {figure}{\numberline {2.27}{\ignorespaces Encuesta 3}}{41}
+\contentsline {figure}{\numberline {2.28}{\ignorespaces Encuesta 4}}{42}
+\contentsline {figure}{\numberline {2.29}{\ignorespaces Encuesta 5}}{43}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {3.1}{\ignorespaces Diagrama de Gantt Inicial}}{40}
-\contentsline {figure}{\numberline {3.2}{\ignorespaces Diagrama de Gantt Inicial 2}}{41}
-\contentsline {figure}{\numberline {3.3}{\ignorespaces Diagrama de Gantt Inicial 3}}{42}
-\contentsline {figure}{\numberline {3.4}{\ignorespaces Diagrama de Gantt Final}}{44}
-\contentsline {figure}{\numberline {3.5}{\ignorespaces Diagrama de Gantt Final 2}}{45}
-\contentsline {figure}{\numberline {3.6}{\ignorespaces Diagrama de Gantt Final 3}}{46}
-\contentsline {figure}{\numberline {3.7}{\ignorespaces Diagrama de Gantt Final 4}}{47}
-\contentsline {figure}{\numberline {3.8}{\ignorespaces Esquema de variaci\IeC {\'o}n de fechas}}{48}
-\contentsline {figure}{\numberline {3.9}{\ignorespaces Esquema de variaci\IeC {\'o}n de la duraci\IeC {\'o}n del proyecto}}{48}
-\contentsline {figure}{\numberline {3.10}{\ignorespaces Gr\IeC {\'a}fica comparativa del trabajo previsto y real}}{48}
-\contentsline {figure}{\numberline {3.11}{\ignorespaces Captura del v\IeC {\'\i }deo de prueba con la aplicaci\IeC {\'o}n}}{55}
-\contentsline {figure}{\numberline {3.12}{\ignorespaces Captura del v\IeC {\'\i }deo de prueba de los LEDs y el tiempo de encendido}}{56}
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Diagrama de Gantt Inicial}}{44}
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Diagrama de Gantt Inicial 2}}{45}
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Diagrama de Gantt Inicial 3}}{46}
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Diagrama de Gantt Final}}{48}
+\contentsline {figure}{\numberline {3.5}{\ignorespaces Diagrama de Gantt Final 2}}{49}
+\contentsline {figure}{\numberline {3.6}{\ignorespaces Diagrama de Gantt Final 3}}{50}
+\contentsline {figure}{\numberline {3.7}{\ignorespaces Diagrama de Gantt Final 4}}{51}
+\contentsline {figure}{\numberline {3.8}{\ignorespaces Esquema de variaci\IeC {\'o}n de fechas}}{52}
+\contentsline {figure}{\numberline {3.9}{\ignorespaces Esquema de variaci\IeC {\'o}n de la duraci\IeC {\'o}n del proyecto}}{52}
+\contentsline {figure}{\numberline {3.10}{\ignorespaces Gr\IeC {\'a}fica comparativa del trabajo previsto y real}}{52}
+\contentsline {figure}{\numberline {3.11}{\ignorespaces Captura del v\IeC {\'\i }deo de prueba con la aplicaci\IeC {\'o}n}}{60}
+\contentsline {figure}{\numberline {3.12}{\ignorespaces Captura del v\IeC {\'\i }deo de prueba de la detecci\IeC {\'o}n de personas}}{61}
+\contentsline {figure}{\numberline {3.13}{\ignorespaces Captura del v\IeC {\'\i }deo de prueba de los LEDs y el tiempo de encendido}}{61}
+\contentsline {figure}{\numberline {3.14}{\ignorespaces Captura del v\IeC {\'\i }deo de prueba del acelerometro y el slider}}{62}
 \contentsfinish 

@@ -260,7 +260,7 @@ En 1940, en plena II Guerra Mundial, surge un primer proyecto en el cual se dota
 En el mercado existen infinidad de coches de modelismo radio-control controlados por una emisora y un receptor de ondas de radio. En este caso, se trata de un sistema en el que se utiliza la conectividad wifi para controlar el modelo, lo cual nos hace que el control pueda ser un dispositivo variable. Existen en el mercado algunos productos similares a este, como son modelos controlados desde un móvil a través de la conexión Bluetooth. La idea de este sistema es dotar al sistema de un sistema no tan rígido como un sistema de tiempo real, si no de un computador capaz de ser programado incluso para automatizar el control del modelo. A continuación mostramos varios productos ya existentes:
 
 
-
+\clearpage
 \begin{itemize}
     \item Spy Tank
 
@@ -277,7 +277,7 @@ En el mercado existen infinidad de coches de modelismo radio-control controlados
 Este producto, el cual está diseñado para espiar, no para el disfrute del modelismo, tiene como puntos a favor que añade visión nocturna, cámara de visión con 360º, micrófono y altavoz. Tienen a su disposición sendas aplicaciones para Android e iOS, en las que con un uso sencillo de la interacción con la app es fácil controlar el coche, como por ejemplo con los acelerómetros Por contra, para el uso de este dispositivo necesitamos de una red wifi existente, ademas de su precio, unos 150 \euro más gastos de envío.
 
 
-
+	\clearpage
     \item BMW X6 Bluetooth
 \end{itemize}
 
@@ -292,7 +292,7 @@ Este producto, el cual está diseñado para espiar, no para el disfrute del mode
 Este producto se parece más a nuestro proyecto, podemos disfrutar del modelismo a un muy buen precio que ronda los 50 \euro. Simplemente nos encontramos con un coche que podemos controlar con sendas aplicaciones Android e iOS con la conexión Bluetooth. Por contra, no usa la red wifi, no tiene cámara de visión y además es tan simple que no podríamos implementar nada ya que no contiene ningún sistema programable con el que poder eliminar esa rigidez.
 
 
-
+\clearpage
 \section{Elicitación de requisitos y análisis de riesgos}
 
 \begin{itemize}
@@ -462,7 +462,7 @@ En los siguientes apartados se describirá más a fondo que hace cada parte y co
 	\end{itemize}
 \end{itemize}
 
- 
+\clearpage 
 \subsection{Desarrollo}
 
 \begin{itemize}
@@ -535,6 +535,7 @@ En un momento determinado del proyecto, ya con las pruebas iniciadas, se detect�
 	
 \end{itemize}
 
+\clearpage
 La imagen que sigue muestra dichos LEDs y su emplazamiento.
 
 \begin{figure}[H]
@@ -571,6 +572,7 @@ Llegados a este punto, se hizo necesario buscar la forma de compactar las placas
 	\label{fig:soporteplacas}
 \end{figure}
 
+\clearpage
 A continuación vemos el resultado de dicho diseño, después de una hora de impresión.
 
 \begin{figure}[H]
@@ -580,6 +582,7 @@ A continuación vemos el resultado de dicho diseño, después de una hora de imp
 	\label{fig:soporteplacasimpreso}
 \end{figure}
 
+\clearpage
 Luego montamos la tornillería necesaria para atornillar la Raspberry Pi y el Arduino.
 
 \begin{figure}[H]
@@ -598,6 +601,7 @@ Después de montar la tornillería, añadimos ambos dispositivos, tanto la Raspb
 	\label{fig:soporteconplacas}
 \end{figure}
 
+\clearpage
 En la siguiente imagen mostramos como estaba el prototipo antes de utilizar dicha placa, con muchísimo desorden y con total imposibilidad de probar el prototipo de forma real, ya que cabía la posibilidad de que se desconectara alguna placa y/o hubiera algún daño en estas.
 
 \begin{figure}[H]
@@ -709,7 +713,7 @@ A continuación, como la placa estaba diseñada para encajar perfectamente en el
 		
 		La manera más fácil que se nos ocurrió para no desaprovechar el trabajo dado la poca cantidad de tiempo disponible a estas alturas, fue procesar las imágenes desde un PC, con lo que ganaríamos en potencia de procesado. También se tuvo en cuenta el poder procesar las imágenes desde la misma aplicación Android ya diseñada, pero por facilidad y falta de tiempo, nos decantamos por la primera. Para ello hemos usado el mismo principio, descargar la imagen del streaming y procesarla luego. 
 		
-		Entrando en detalles del propio script, partimos de un script ya existente que detecta en una imagen a las personas que hay \cite{pedestrian}. Este se modificó en primera instancia para detectar personas en una continuidad de frames, en este caso capturados desde la propia WebCam del portátil. Acto seguido, tras la comprobación de que todo funcionaba perfectamente se pasó a buscar la manera de obtener las imágenes que la cámara del prototipo estaba captando. Como primera opción se probó intentar ocupar la cámara para este menester, pero al estar ya transmitiendo por streaming no era posible volverla a ocupar. Tras ello, se buscó la manera de obtener imágenes procedentes de un streaming mediante un script en Python y parseando las imágenes con openCV para que pudieran ser procesadas.
+		Entrando en detalles del propio script, partimos de un script ya existente que detecta en una imagen a las personas que hay \cite{pedestrian}. Este se modificó en primera instancia para detectar personas en una continuidad de frames, en este caso capturados desde la propia WebCam del portátil. Acto seguido, tras la comprobación de que todo funcionaba perfectamente se pasó a buscar la manera de obtener las imágenes que la cámara del prototipo estaba captando. Como primera opción se probó intentar ocupar la cámara para este menester, pero al estar ya transmitiendo por streaming no era posible volverla a ocupar. Tras ello, se buscó la manera de obtener imágenes procedentes de un streaming mediante un script en Python y parseando las imágenes con openCV para que pudieran ser procesadas. \cite{OpenCV}
 		
 		En la imagen que sigue detallaremos con un diagrama de estados el funcionamiento de dicho programa.
 		
@@ -721,7 +725,16 @@ A continuación, como la placa estaba diseñada para encajar perfectamente en el
 		\end{figure}
 		
 	
-		\cite{OpenCV}
+		
+		
+		A continuación mostraremos una captura de dicha aplicación con una de las pruebas realizada.
+		
+		\begin{figure}[H]
+			\centering
+			\includegraphics[width=1\textwidth]{img/automatismo}
+			\caption{Captura aplicación procesando imágenes}
+			\label{fig:automatismo}
+		\end{figure}
 
 	\medskip
 
@@ -767,7 +780,7 @@ A continuación, como la placa estaba diseñada para encajar perfectamente en el
 \end{itemize}
 \end{itemize}
 
-
+\clearpage
 \section{Pruebas del sistema} 
 
 Las pruebas realizadas del sistema han sido muy diversas, ya que en cada paso del diseño del software y hardware correspondiente se han sucedido todo tipo de test por partes para cerciorar el correcto funcionamiento de las modificaciones. A continuación pasaremos a describir las más importantes:
@@ -830,6 +843,43 @@ Las pruebas realizadas del sistema han sido muy diversas, ya que en cada paso de
 	
 \end{itemize}
 
+Además le pedimos a varios usuarios realizar una encuesta sobre el proyecto en general, usabilidad de la aplicación y opinión. A continuación adjuntamos los resultados que nos ha arrojado dicha encuesta:
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=1\textwidth]{img/primera}
+	\caption{Encuesta 1}
+	\label{fig:primeraEncuesta}
+\end{figure}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=1\textwidth]{img/segunda}
+	\caption{Encuesta 2}
+	\label{fig:segundaEncuesta}
+\end{figure}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.97\textwidth]{img/tercera}
+	\caption{Encuesta 3}
+	\label{fig:terceraEncuesta}
+\end{figure}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.97\textwidth]{img/cuarta}
+	\caption{Encuesta 4}
+	\label{fig:cuartaEncuesta}
+\end{figure}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.97\textwidth]{img/quinta}
+	\caption{Encuesta 5}
+	\label{fig:quintaEncuesta}
+\end{figure}
+
 
 \chapter{BLOQUE 3: PLANIFICACIÓN DEL PROYECTO}
 \section{Planificación temporal inicial} 
@@ -837,7 +887,7 @@ A continuación detallaremos una planificación temporal a priori:
 
 \begin{figure}[H]
   \centering
-    \includegraphics[angle=270,width=0.5\textwidth]{img/ganttInicial}
+    \includegraphics[angle=270,width=0.40\textwidth]{img/ganttInicial}
   \caption{Diagrama de Gantt Inicial}
   \label{fig:ganttInicial}
 \end{figure}
@@ -924,7 +974,9 @@ A continuación detallaremos una planificación financiera a priori:
 	\label{fig:graficaComparativa}
 \end{figure}
 
-\section{Planificación financiera final} 
+
+\clearpage
+\section{Planificación financiera final (real)} 
 
 A continuación detallaremos una planificación financiera a posteriori:
 \begin{itemize}
@@ -949,6 +1001,7 @@ A continuación detallaremos una planificación financiera a posteriori:
 \fbox{Presupuesto total: 4095,83 \euro}
 \end{itemize}
 
+\clearpage
 \section{Estudio de mercado}
 \subsection{Clientes potenciales}
 
@@ -1013,6 +1066,8 @@ A continuación detallaremos una planificación financiera a posteriori:
 	
 	También surgen líneas como la seguridad, la red WiFi que ahora mismo emite nuestra Raspberry es una red abierta, sin clave, con lo que cualquiera podría conectarse y trastear la placa. También es posible solucionarlo fácilmente, modificando los archivos de configuración del programa que emite el SSID, añadiéndole una contraseña WPA2 por ejemplo.
 	
+	Si quisieramos aumentar la señal WiFi que emite nuestra Raspberry habría que añadirle un nuevo adaptador más potente o incluso usar un punto de acceso entre cliente y Raspberry para aumentar la cobertura de la señal.
+	
 	Además podría mejorarse el protocolo de comunicación entre la Raspberry y los clientes, que aunque esté implementada sobre TCP, debería de haber comunicación en ambos sentidos para confirmar la correcta recepción de las órdenes. Por ejemplo hacer lo mismo que se hace en el protocolo serie, primero realizar un saludo entre ambas partes y después de enviar una instrucción, enviar una suma de comprobación para comprobar la integridad de los datos.
 	
 	Si el proyecto continuase, además habría que plantearse que Raspberry se pudiese integrar en un sistema con comunicación CAN-BUS como el que utilizan la mayoría de los coches modernos, con lo que ganaríamos luego en facilidad de instalación en cualquier modelo de coche ya comercializado. Igualmente una solución podría ser añadir una placa para el CAN-BUS y cambiar la comunicación de red por una sobre la red CAN-BUS propiamente.
@@ -1047,6 +1102,18 @@ A continuación detallaremos una planificación financiera a posteriori:
 				\end{figure}
 		
 				 Vídeo: \url{https://youtu.be/g_npEDxkSyo}
+				 \clearpage
+				 
+				 \item Vídeo de prueba de la detección de personas:
+				 
+				 \begin{figure}[H]
+				 	\centering
+				 	\includegraphics[width=1\textwidth]{img/capturaAut}
+				 	\caption{Captura del vídeo de prueba de la detección de personas}
+				 	\label{fig:capturaAut}
+				 \end{figure}
+				 
+				 Vídeo: \url{https://youtu.be/ZAHWm1gdG3w}
 				 
 				
 				\item Vídeo de prueba de los LEDs y tiempo de arranque:
@@ -1059,7 +1126,24 @@ A continuación detallaremos una planificación financiera a posteriori:
 				\end{figure}
 				
 				Vídeo: \url{https://youtu.be/C1AJe-r5ouk}
+				
+				\clearpage
+				\item Vídeo de prueba del acelerometro y el slider:
+				
+				\begin{figure}[H]
+					\centering
+					\includegraphics[width=1\textwidth]{img/testTablet}
+					\caption{Captura del vídeo de prueba del acelerometro y el slider}
+					\label{fig:capturaTablet}
+				\end{figure}
+				
+				Vídeo: \url{https://youtu.be/cP5pMJNDWzE}
+							
+				
 		\end{itemize}
+	\item Encuesta de los usuarios:
+	
+			Enlace: \url{https://goo.gl/forms/8PZvvWimsy6srBcm2}
 
 \end{enumerate}
 
