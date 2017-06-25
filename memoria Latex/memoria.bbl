@@ -381,4 +381,32 @@ Tinkercad.%
 \APACrefnote{fecha de consulta: 5 de Abril de 2017}
 \PrintBackRefs{\CurrentBib}
 
+\bibitem [\protect \citeauthoryear {%
+WikiPedia%
+}{%
+WikiPedia%
+}{%
+{\protect \APACyear {2016}}%
+}]{%
+wikiRasp}
+\APACinsertmetastar {%
+wikiRasp}%
+\begin{APACrefauthors}%
+WikiPedia.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2016}{}{}.
+\newblock
+\APACrefbtitle {Raspberry Pi 3.} {Raspberry pi 3.}
+\newblock
+\APACaddressPublisherEqAuth{}{WikiPedia}.
+\newblock
+\begin{APACrefURL}
+  \url{https://es.wikipedia.org/wiki/Raspberry_Pi#Raspberry_Pi_3_Modelo_B}
+  \end{APACrefURL}
+\newblock
+\APACrefnote{fecha de consulta: 09 de Junio de 2017}
+\PrintBackRefs{\CurrentBib}
+
 \end{thebibliography}

@@ -14,12 +14,12 @@
 \setlength{\parskip}{4ex}
 \tipo{Grado}   % Grado o M\'aster
 \titulopro{Control de un coche mediante Raspberry Pi}
-\tutor{Manuel Jesús Domínguez Morales}
+\tutor{Manuel Jesús Domínguez Morales y Ángel Jiménez Fernández (Cotutor)}
 \departamento{Arquitectura y Tecnología de Computadores}
 %\autores{Nombre 1}{Nombre 2}  % Dos autores
 \autores{Gonzalo Romero Castillo}{{\ }}   % Un autor
-\dia{26 de Junio de 2017 (v.1.0)}
-\titulacion{GITI}
+\dia{26 de Junio de 2017}
+\titulacion{Grado en Ingeniería Informática - Tecnologías Informáticas}
 
 \hacerportada
 
@@ -38,7 +38,7 @@ Mis más sinceros agradecimientos a:
 	\item Petra Castillo Herrera
 	\item Ángela Romero Castillo
 	\item Juan Manuel Gutierrez Romero
-	\item José Antonio (Villa)
+	\item José Antonio Jarana Fernández
 	\item Antonio Cordero Sánchez
 	\item María del Mar Bernal Masteo
 	
@@ -46,11 +46,10 @@ Mis más sinceros agradecimientos a:
  
 \cdpchapter{Resumen}
 
-Este proyecto se enmarca en un entorno de hardware principalmente, en el que se pretende implementar el control total sobre un vehículo. En nuestro caso, se ha implementado el control manual de un vehículo prototipo, basado en un coche radio control ya que implementarlo en un coche real era costoso y peligroso. Este control se ha desarrollado en una aplicación para dispositivos basados en Android. Además, se quiso diseñar un sistema lo más modular posible y barato, con lo que desde un principio se adoptó la decisión de implementar el proyecto en torno al miniPC Raspberry Pi, en concreto la versión 3 modelo B. Después de varios fallos, se incluyó en el sistema un Arduino Nano para solucionar varios errores.
+Este proyecto se enmarca en un entorno de hardware principalmente, en el que se pretende implementar el control total sobre un vehículo. En nuestro caso, se ha implementado el control manual de un vehículo prototipo, basado en un coche radio control ya que implementarlo en un coche real era costoso y peligroso. Este control se ha desarrollado en una aplicación para dispositivos basados en Android. Además, se quiso diseñar un sistema lo más modular posible y barato, con lo que desde un principio se adoptó la decisión de implementar el proyecto en torno al miniPC Raspberry Pi, en concreto la versión 3 modelo B. Después de reconsiderar el uso de Raspberry Pi, se incluyó en el sistema un Arduino Nano para poder liberar a Raspberry de cierta carga de trabajo que podía ser mejor realizada por Arduino.
 
 
-
-Desde el primer momento se desarrolla el proyecto con la idea de automatizar el control del vehículo. Tras numerosos fallos y la falta de tiempo, se ha tenido que dejar la automatización completa en una pequeña parte de esta. Al principio se pensó en implementar el seguimiento de una línea mediante imágenes, pero al final se ha implementado una detección de personas que permiten la circulación o no del vehículo. En este caso, se ha desarrollado un script en PC el cual se encarga de la funcionalidad que acabamos de comentar.
+Desde el primer momento se desarrolla el proyecto con la idea de automatizar el control del vehículo. Tras replantear los objetivos que se pensaron al inicio, se vario un poco la dirección del proyecto. Al principio se pensó en implementar el seguimiento de una línea mediante imágenes, pero al final se ha implementado una detección de personas que permiten la circulación o no del vehículo. En este caso, se ha desarrollado un script en PC el cual se encarga de la funcionalidad que acabamos de comentar.
 
 
 
@@ -60,12 +59,10 @@ Con esto se pretendía desarrollar contenidos no vistos durante el Grado en Inge
 
 \cdpchapter{Resumen en inglés}
 
-This project is mainly framed in a hardware environment, in which it is tried to implement the total control on a vehicle. In our case, we have implemented the manual control of a prototype vehicle, based on a radio-controlled car since implementing it in a real car was expensive and dangerous. This control has been developed in an application for Android-based devices. In addition, it was wanted to design a system as modular and cheap as possible, so that, from the beginning it was adopted the decision of implementing the project
-around the miniPC Raspberry Pi, specifically, version 3 model B. 
-After several failures, it was included in the system an Arduino Nano in order to solve several errors.
+This project is mainly framed in a hardware environment, in which it is tried to implement the total control on a vehicle. In our case, we have implemented the manual control of a prototype vehicle, based on a radio-controlled car since implementing it in a real car was expensive and dangerous. This control has been developed in an application for Android-based devices. In addition, it was wanted to design a system as modular and cheap as possible, so that, from the beginning it was adopted the decision of implementing the project around the miniPC Raspberry Pi, specifically, version 3 model B. After reconsidering the use of Raspberry Pi, an Arduino Nano was included in the system to be able to free to Raspberry of certain workload that could be better done by Arduino.
 
 
-From the very first moment the project is developed with the idea of automating the control of the vehicle. After numerous failures and due to a lack of time, it has had to leave the complete automation in a small part of it. At the beginning, it was thought to implement the tracking of a line by means of images, but, in the end, it has been implemented a people detection that allows the circulation or not of the vehicle. 
+From the very first moment the project is developed with the idea of automating the control of the vehicle. After rethinking the objectives that were initially envisaged, the direction of the project varied a little. At the beginning, it was thought to implement the tracking of a line by means of images, but, in the end, it has been implemented a people detection that allows the circulation or not of the vehicle. 
 In this case, a script has been developed in PC which is in charge of the functionality that we have just commented.
 
 
@@ -78,6 +75,9 @@ In addition, it was intended to learn about the real-time systems control and to
 
 
 \listoffigures
+
+\listoftables
+
 \mainmatter  
 
 
@@ -234,22 +234,36 @@ Para todos los niveles de automatización, incluso en los más altos, el estánd
 
 A continuación expondremos los objetivos del proyecto. En primer lugar veamos los objetivos a nivel profesional:
 \begin{itemize}
-	\item Controlar un coche mediante una Raspberry Pi. Implementaremos un coche, a escala, tomando uno que era antes de radio control, que sea controlado mediante una Raspberry Pi. Esta será la encargada de procesar todas las instrucciones que el usuario envíe y actuar conforme a estas. El servicio para recibir estas instrucciones será implementado mediante un servicio en red, red a la que deberemos de acceder mediante la emisión de una señal WiFi que deberá hacer la Raspberry. Además tendrá que enviar imágenes en directo para que los clientes puedan conducir remotamente.
+	\item Controlar un coche mediante una Raspberry Pi. 
 	
-	\item Aplicación Android. Para controlar el coche, diseñaremos una aplicación Android encargada del control del coche. Esta usará el acelerómetro para controlar la dirección del coche, girando de lado a lado. Para el control del acelerador/freno, necesitaremos usar un slider para que sea más cómodo. La aplicación se conectará a través del WiFi a la Raspberry. Además, deberá de recibir el streaming de vídeo que emitiremos desde la Raspberry.
+	Implementaremos un coche, a escala, tomando uno que era antes de radio control, que sea controlado mediante una Raspberry Pi. Esta será la encargada de procesar todas las instrucciones que el usuario envíe y actuar conforme a estas. El servicio para recibir estas instrucciones será implementado mediante un servicio en red, red a la que deberemos de acceder mediante la emisión de una señal WiFi que deberá hacer la Raspberry. Además tendrá que enviar imágenes en directo para que los clientes puedan conducir remotamente.
 	
-	\item Automatización. Se deberá implementar una aplicación que permita una pequeña automatización del coche. Se deberá de procesar las imágenes que el streaming emite mediante la Raspberry y detectar personas. Cuando estas sean detectadas, el coche deberá cesar su actividad, o sea, pararse.
+	\item Aplicación Android. 
+	
+	Para controlar el coche, diseñaremos una aplicación Android encargada del control del coche. Esta usará el acelerómetro para controlar la dirección del coche, girando de lado a lado. Para el control del acelerador/freno, necesitaremos usar un slider para que sea más cómodo. La aplicación se conectará a través del WiFi a la Raspberry. Además, deberá de recibir el streaming de vídeo que emitiremos desde la Raspberry.
+	
+	\item Automatización. 
+	
+	Se deberá implementar una aplicación que permita una pequeña automatización del coche. Se deberá de procesar las imágenes que el streaming emite mediante la Raspberry y detectar personas. Cuando estas sean detectadas, el coche deberá cesar su actividad, o sea, pararse.
 \end{itemize}
 
 Una vez descritos los objetivos a nivel profesional pasaremos a ver los objetivos de nivel educacional:
 \begin{itemize}
-	\item Trabajar con sistemas en tiempo real. En este tipo de sistemas, es muy importante el tiempo de reacción, luego deberá de ajustarse lo máximo al tiempo real para que funcione correctamente.
+	\item Trabajar con sistemas en tiempo real. 
 	
-	\item Aprender el manejo de pines de entrada/salida. También debemos aprender a usar los pines de entrada/salida para generar señales PWM para el control de la dirección y de la tracción/freno. Además debemos saber usarlas como salidas analógicas para el control del encendido de los LEDs indicadores del estado.
+	En este tipo de sistemas, es muy importante el tiempo de reacción, luego deberá de ajustarse lo máximo al tiempo real para que funcione correctamente.
 	
-	\item Diseñar protocolos de comunicación. Implementaremos varios protocolos de comunicación, para controlar el sistema de la manera más fácil posible y que además sea independiente del cliente, o sea, que tenga versatilidad en que los clientes puedan manejar varios tipos de dispositivos y que puedan funcionar independientemente del Sistema Operativo o el Hardware que tengan.
+	\item Aprender el manejo de pines de entrada/salida. 
 	
-	\item Aprender a diseñar aplicaciones Android para el control de dispositivos. Como antes comentamos, debemos aprender a diseñar aplicaciones para Android principalmente y en concreto, para manejar conexiones de red, manejar sensores de aceleración y como no, recibir vídeo y mostrarlo.
+	También debemos aprender a usar los pines de entrada/salida para generar señales PWM para el control de la dirección y de la tracción/freno. Además debemos saber usarlas como salidas analógicas para el control del encendido de los LEDs indicadores del estado.
+	
+	\item Diseñar protocolos de comunicación. 
+	
+	Implementaremos varios protocolos de comunicación, para controlar el sistema de la manera más fácil posible y que además sea independiente del cliente, o sea, que tenga versatilidad en que los clientes puedan manejar varios tipos de dispositivos y que puedan funcionar independientemente del Sistema Operativo o el Hardware que tengan.
+	
+	\item Aprender a diseñar aplicaciones Android para el control de dispositivos. 
+	
+	Como antes comentamos, debemos aprender a diseñar aplicaciones para Android principalmente y en concreto, para manejar conexiones de red, manejar sensores de aceleración y como no, recibir vídeo y mostrarlo.
 	
 \end{itemize}
 \section{Estado del arte}
@@ -401,11 +415,103 @@ En los siguientes apartados se describirá más a fondo que hace cada parte y co
 \begin{itemize}
 	\item Hardware
 		\begin{itemize}
-			\item Raspberry Pi 3
+			\item Raspberry Pi 3:
+			
+				\cite{wikiRasp}  Raspberry Pi es un computador de placa reducida, computador de placa única o computador de placa simple (SBC) de bajo coste desarrollado en Reino Unido por la Fundación Raspberry Pi, con el objetivo de estimular la enseñanza de ciencias de la computación en las escuelas. En la siguiente tabla veremos las características de la Raspberry Pi 3 modelo B.
+				
+				
+				\begin{table}[H]
+					\begin{center}
+						\begin{tabular}{|l|l|}
+							\hline
+							 & Raspberry Pi 3 Modelo B \\
+							\hline \hline
+							SoC & Broadcom BCM2837 \\ \hline
+							CPU & 1.2GHz 64-bit quad-core ARMv8 \\ \hline
+							Juego de instrucciones: & RISC de 32 bits \\ \hline
+							Memoria (SDRAM) & 1 GB (compartidos con la GPU) \\ \hline
+							Puertos USB 2.0 & 4 \\ \hline
+							Entradas de vídeo & Conector MIPI CSI que permite instalar un módulo de cámaras\\ \hline
+							Salidas de vídeo & Conector RCA, HDMI, Interfaz DSI para panel LCD59 60 \\ \hline
+							Salidas de audio & Conector de 3.5 mm, HDMI \\ \hline
+							Almacenamiento integrado & MicroSD \\ \hline
+							Conectividad de red & 	10/100 Ethernet (RJ-45), Wifi 802.11n, Bluetooth 4.1 \\ \hline
+							Periféricos de bajo nivel & 17 x GPIO y un bus HAT ID \\ \hline
+							Consumo energético & 800 mA, (4.0 W) \\ \hline
+							Fuente de alimentación & 5 V vía Micro USB o GPIO header \\ \hline
+							Dimensiones & 85.60mm * 53.98mm \\ \hline
+						\end{tabular}
+						\caption{Características de la Raspberry Pi 3 modelo B}
+						\label{tabla:raspberry}
+					\end{center}
+				\end{table}
+			
+			
 			\item Arduino Nano
-			\item Webcam
+			
+				Arduino, es una compañía de hardware libre y una comunidad tecnológica que diseña y manufactura placas computadora de desarrollo de hardware y software, compuesta respectivamente por circuitos impresos que integran un microcontrolador y un entorno de desarrollo (IDE), en donde se programa cada placa.
+			
+				Arduino se enfoca en acercar y facilitar el uso de la electrónica y programación de sistemas embebidos en proyectos multidisciplinarios. Toda la plataforma, tanto para sus componentes de hardware como de software, son liberados con licencia de código abierto que permite libertad de acceso a ellos.
+				
+				En el proyecto no vamos a usar un Arduino de dicha marca, si no una copia, en nuestro caso un NANO V3.0 ATmega328P CH430, a continuación exponemos sus características:
+				
+				\begin{table}[H]
+					\begin{center}
+						\begin{tabular}{|l|l|}
+							\hline
+							& NANO V3.0 ATmega328P CH430 \\
+							\hline \hline
+							Microcontrolador & ATmega328 \\ \hline
+							Tension de Operación (nivel lógico) & 5V \\ \hline
+							Tension de Entrada (recomendado) & 7-12V \\ \hline
+							Pines E/S Digitales & 14 ( 6 salidas PWM) \\ \hline
+							Entradas Analógicas & 8 (A0-A7) \\ \hline
+							Corriente DC por Pin I/O & 40 mA\\ \hline
+							Memoria Flash & 32 KB (2 KB usados por el bootloader) \\ \hline
+							SRAM & 2 KB \\ \hline
+							EEPROM & 1 KB \\ \hline
+							Frecuencia de Reloj & 	16 MHz \\ \hline
+							Comunicación USB & CH340 \\ \hline
+							Dimensiones & 18 mm * 44 mm \\ \hline
+						\end{tabular}
+						\caption{Características del Arduino NANO}
+						\label{tabla:arduino}
+					\end{center}
+				\end{table}
+			
+			\clearpage
 			\item Variador
+			
+				En la siguiente tabla mostraremos las características principales del variador para el control motor que hemos usado.
+				
+				\begin{table}[H]
+					\begin{center}
+						\begin{tabular}{|l|l|}
+							\hline
+							& Variador \\
+							\hline \hline
+							Baterias de niquel soportadas & Grupos de 4 a 6 celdas (4,8-7,2 V) \\ \hline
+							Baterias de litio soportadas & Grupo de 2 celdas (4,8-7,2 V) \\ \hline
+							Corriente hacia adelante & 320 A \\ \hline
+							Corriente  hacia detrás & 240 A \\ \hline
+							Corriente de freno & 250 A \\ \hline
+							Salida del BEC & 5.0V, 2A\\ \hline
+							Rango de voltaje & 4,8 - 8,4 V \\ \hline
+							Frecuencia PWM & 1.5KHZ \\ \hline
+						\end{tabular}
+						\caption{Características del Variador}
+						\label{tabla:variador}
+					\end{center}
+				\end{table}
+			
+			
 			\item Servo
+			
+				Se utilizará un micro servo para controlar la dirección.
+				
+			\item WebCam
+				
+				La WebCam que finalmente se utilizará será una de un portatil, en concreto el modelo de cámara es una CK77 94V-O.
 		\end{itemize}
 	\item Software
 	\begin{itemize}
@@ -462,8 +568,10 @@ En los siguientes apartados se describirá más a fondo que hace cada parte y co
 	\end{itemize}
 \end{itemize}
 
-\clearpage 
+
 \subsection{Desarrollo}
+
+En este punto vamos a hablar de como se ha desarrollado el proyecto a lo largo del tiempo en el que ha sido ejecutado. Hemos pensado que era buena idea dividirlo en dos partes bien diferenciadas, primero por un lado hablaremos del hardware utilizado y del prototipo en sí, de como han sido montados, construido y conectado. Por otro lado hablaremos del software que ha habido que implementar o reutilizar y de como lo hemos ido integrando para llegar a conseguir que todo funcionase correctamente.
 
 \begin{itemize}
 
@@ -474,12 +582,13 @@ A continuación se mostrará el coche sin ningún tipo de modificación:
 
 \begin{figure}[H]
   \centering
-    \includegraphics[width=1\textwidth]{img/A959}
+    \includegraphics[angle=270,width=1.35\textwidth]{img/A959}
   \caption{Coche sin desmontar}
   \label{fig:CocheSin}
 \end{figure}
 
-En la siguiente figura, se muestran las piezas eliminadas del prototipo:
+\clearpage
+En la siguiente figura, se muestran las piezas eliminadas del prototipo, en este caso a la izquierda veremos el antiguo variador/receptor y a la derecha el servo que controlaba la dirección.
 
 \begin{figure}[H]
   \centering
@@ -501,12 +610,24 @@ En cuanto al hardware utilizado, inicialmente se planificó el uso de una Raspbe
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=0.9\textwidth]{img/raspArd}
-	\caption{Raspberry y Arduino usados}
-	\label{fig:RaspArd}
+	\includegraphics[width=0.8\textwidth]{img/RASP}
+	\caption{Raspberry usado}
+	\label{fig:Rasp}
 \end{figure}
 
-Como anteriormente hemos comentado, el Arduino se encarga de las funciones de control de dirección y velocidad, a continuación mostraremos una imagen del conexionado completo, exceptuando el cable USB que une el Arduino y la Raspberry.
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.5\textwidth]{img/arduinoNano}
+	\caption{Arduino usado}
+	\label{fig:Ard}
+\end{figure}
+
+
+Como anteriormente hemos comentado, el Arduino se encarga de las funciones de control de dirección y velocidad, a continuación mostraremos una imagen del conexionado completo, exceptuando el cable USB que une el Arduino y la Raspberry. 
+
+Arriba a la derecha veremos el motor, que representa el motor que tiene el coche para moverse adelante y atrás. Justo abajo del motor veremos un cuadrado negro que representa el variador con su alimentación pertinente, donde nosotros tenemos conectada la batería. En la mitad y esquina izquierda vemos tanto Arduino como Raspberry respectivamente. Abajo a la derecha vemos el servo, el cual controla la dirección del prototipo.
+
+Como nota apuntar que los cables rojo y negro que salen del variador hacia la Raspberry termina en un conector microUSB que por razones del software utilizado para el diseño del esquema (Fritzing) no se ha podido unir el conector a la placa, pero en la realidad es que siempre está conectado y es por donde Raspberry toma la alimentación.
 
 \begin{figure}[H]
 	\centering
@@ -540,7 +661,7 @@ La imagen que sigue muestra dichos LEDs y su emplazamiento.
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=1\textwidth]{img/leds}
+	\includegraphics[angle=270,width=1\textwidth]{img/leds}
 	\caption{LEDs y su emplazamiento}
 	\label{fig:leds}
 \end{figure}
@@ -577,7 +698,7 @@ A continuación vemos el resultado de dicho diseño, después de una hora de imp
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=0.6\textwidth]{img/soporteImpreso}
+	\includegraphics[width=1\textwidth]{img/soporteImpreso}
 	\caption{Placa impresa en 3D}
 	\label{fig:soporteplacasimpreso}
 \end{figure}
@@ -620,27 +741,31 @@ A continuación, como la placa estaba diseñada para encajar perfectamente en el
 	\label{fig:cochesResultante}
 \end{figure}
 
-\item Software
 
+\medskip
+\item Software
+\medspace
 
 \begin{itemize}
-	
+	\medskip
 	\item Sistema operativo
+	\medskip
 	
 	Como plataforma software donde montar todo el sistema en la Raspberry hemos usado una distribución de Linux de Raspberry.org, Raspbian Jessie lite en concreto , la cual no tiene interfaz gráfica para evitar esa sobrecarga totalmente innecesaria.
 	\medskip
-	
+	\medspace
 	\item Conexión inalámbrica
+	\medskip
 	
 	Se han utilizado dos programas para el correcto funcionamiento de la conexión.
-	
+	\medskip
 		\begin{itemize}
 			\item hostapd
 			\smallskip
 			
 			Este software nos ha permitido configurar la Raspberry para que emita un SSID y cambiar las opciones de este, como puede ser nombre, contraseña, etc.
 			\smallskip
-			
+			\medskip
 			\item udhcpd
 			\smallskip
 			
@@ -649,6 +774,7 @@ A continuación, como la placa estaba diseñada para encajar perfectamente en el
 		\end{itemize}
 	\medskip
 	\item Arduino
+		\medskip
 	
 	En la parte del hardware comentamos la utilización de un Arduino para el control de dirección y tracción/freno. Para su integración, Raspberry y Arduino se comunican por USB, usándose comunicación serial. Se ha creado un pequeño protocolo de bienvenida entre ambos para asegurar el correcto funcionamiento de la conexión, que a continuación mostraremos.
 	
@@ -659,7 +785,18 @@ A continuación, como la placa estaba diseñada para encajar perfectamente en el
 		\label{fig:arduinoVerificacion}
 	\end{figure}
 	
-	Además, se ha creado una codificación entendible por ambos extremos para mandar las instrucciones de lo que el coche debe realizar. Un ejemplo de instrucción sería <<$[$15,115$]$>> y su decodificación:
+	Además, se ha creado una codificación entendible por ambos extremos para mandar las instrucciones de lo que el coche debe realizar. En general nos basamos en el siguiente esquema de comunicación.
+	
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=0.7\textwidth]{img/trama}
+		\caption{Trama de la comunicación con Arduino}
+		\label{fig:trama}
+	\end{figure}
+	
+	En nuestro caso, ``$<$Inicio de trama>'' se reduce al carácter ``$[$'' para indicarlo. En el caso de ``<Fin de trama>'' igualmente queda reducido a un carácter, en esta ocasión es ``$]$''. Estos dos caracteres que acabamos de explicar son fijos siempre y deben aparecer para que la instrucción sea reconocida y procesada correctamente. Los ``<Datos>'' que necesitamos para controlar el coche en nuestro caso son dos valores numéricos, separados por una coma. Estos son variables y podemos enviar valores siempre que sean correctos y reconocibles por el servicio. El primer valor, (antes de la coma) indica el porcentaje de aceleración del vehículo, que está comprendido entre -100 \% y 100 \%. En segundo lugar aparece la cifra que indica los grados de giro del servo, que teóricamente va desde 0º a 180º, que es lo que permite el propio servo, pero que en nuestro caso está limitado a lo que nos deja girar la construcción del mecanismo de dirección del coche que va desde los 65º hasta los 115º. Así pues todo esto queda reducido a instrucciones de la forma ``$[$Acel,Dir$]$'', donde Acel es el valor de la aceleración y Dir el valor de la dirección.
+	
+	 Un ejemplo de instrucción sería <<$[$15,115$]$>> y su decodificación:
 	\begin{itemize}
 		\item $[$ : Carácter de comienzo de instrucción, esto se ha utilizado para reconocer que está comenzando una instrucción.
 		\item Aceleración: 15\% 
@@ -667,10 +804,13 @@ A continuación, como la placa estaba diseñada para encajar perfectamente en el
 		\item $]$ : Carácter de terminación de comando, esto se ha utilizado para reconocer el término de una instrucción.
 	\end{itemize}
 	
-	Tras esta explicación cabe aclarar que la primera cifra antes de la coma indica el porcentaje de aceleración del vehículo comprendido entre -100 \% y 100 \%. En segundo lugar aparece la cifra que indica los grados de giro del servo, que teóricamente va desde 0º a 180º, pero que en nuestro caso está limitado a lo que nos deja girar la construcción del mecanismo de dirección que va desde los 65º hasta los 115º.
+	 
 	
 
 	El Arduino recibe dichas instrucciones y las decodifica como hemos descrito. Este respondiendo a una fórmula matemática que se intenta ajustar lo máximo al PWM que soporta el variador y la dirección, sus valores son modificados con una función que maneja los servos dependiendo de los grados a los que queramos posicionarlo y a la aceleración que deseemos imprimir.
+	
+	
+	En la siguiente imágen mostramos el proceso que sigue el sistema para la comunicación entre Raspberry y Arduino, como se envían las instrucciones y como se tratan.
 	
 	\begin{figure}[H]
 		\centering
@@ -744,6 +884,7 @@ A continuación, como la placa estaba diseñada para encajar perfectamente en el
 	
 	Una vez todas las conexiones están activas se inicializa el acelerómetro para escuchar el sensor y mandar sus datos a la dirección del coche. Para evitar que el tráfico de instrucciones sea muy alto debido a las continuas lecturas del acelerómetro, se ha discretizado el valor de este a la parte entera, ya que así obviamos diferencias pequeñas de dirección y ruidos. Además solo se vuelve a mandar un comando si es distinto al anterior para evitar enviar varios comandos con el mismo valor. En cuanto al control de aceleración, ya sabemos que el prototipo tiene una velocidad alta, con lo que desde la aplicación solo permitimos el 50 \%  de la potencia disponible. Al igual que en la dirección hemos usado la misma táctica en cuanto a no repetir instrucciones ya enviadas. En el acelerador sí permitimos que el control actúe con toda su precisión porque da pasos de 1 unidad, algo asumible en cuanto a diferencia de aceleración y de tráfico generado.
 	
+	\clearpage
 	A continuación mostraremos unas capturas de la aplicación ejecutada en una tablet Samsung Galaxy Tab 3 7":
 	
 	\begin{figure}[H]
@@ -998,8 +1139,14 @@ A continuación detallaremos una planificación financiera a posteriori:
 	\item Resistencias: 0,30 \euro
 	\item Horas de trabajo: 495 h * 8 \euro/h = 3960 \euro
 
-\fbox{Presupuesto total: 4095,83 \euro}
+
 \end{itemize}
+\medskip
+\fbox{Presupuesto total: 4095,83 \euro}
+
+
+\medskip
+Tras ello hay una diferencia de 873,28 \euro con la planificación financiera inicial.
 
 \clearpage
 \section{Estudio de mercado}
@@ -1056,8 +1203,48 @@ A continuación detallaremos una planificación financiera a posteriori:
 
 	Como podemos ver hemos conseguido un producto terminado que podría salir al mercado en cualquier momento. Hemos cumplido con los objetivos fijados no solo a nivel funcional, si no a nivel académico. Hemos aprendido bastante conforme a los objetivos educativos, los conocimientos adquiridos sobre el manejo de las placas, el protocolo de comunicación serie, el protocolo de comunicación en red, etc. 
 	
-	En conclusión hemos de estar satisfechos con el trabajo realizado, ya que se ha cumplido con todo lo esperado y se ha aprendido bastantes temas que no son abordados en el grado.
-
+	\begin{itemize}
+		\item Controlar un coche mediante Raspberry Pi
+		
+			Se ha conseguido controlar un coche que antes era radio control con una Raspberry Pi. Se ha implementado un servicio para recibir instrucciones y otro para emitir imágenes. Además se ha conseguido que el prototipo emita una señal WiFi y que nos podamos conectar para utilizar los servicios. Por tanto se ha obtenido un coche totalmente funcional y correcto, como planteamos.
+			
+		\item Aplicación Android
+		
+			Se ha implementado dicha aplicación Android, con la cual podemos controlar el coche mediante el acelerómetro y un slider. Además hemos conseguido que reciba las imágenes que emite el servicio de vídeo streaming y sea mostrado en la aplicación. Esta aplicación usa la red WiFi que el coche emite para enviar instrucciones y recibir las imágenes. Es completamente correcta y funcional la aplicación.
+			
+		\item Automatización
+		
+			Se ha obtenido una aplicación funcional en el PC, que envía una instrucción al coche para que se mantenga activo excepto cuando detecta a una persona.
+			
+		\item Trabajar con sistemas en tiempo real
+		
+			Como hemos trabajado con el control del coche podemos decir que hemos conseguido un sistema en tiempo real, ya que todos los servicios están orientados a ello y con la aplicación controlamos el coche como si de un mando radio control se tratase.
+			
+		\item Aprender el manejo de pines de entrada/salida
+			
+			Se ha implementado el control de la dirección y la aceleración mediante señales PWM, producidas en el Arduino. Además se ha conseguido controlar los LEDs con el GPIO de Raspberry. Con lo cual se ha aprendido a manejar tanto señales digitales como analógicas en pines de entrada/salida.
+	
+		\clearpage
+		\item Diseñar protocolos de comunicación
+		
+			Se han diseñado dos protocolos o métodos de comunicación.
+				\begin{itemize}
+					\item Comunicación serie
+					
+						Se ha implementado la comunicación serie entre Raspberry Pi y Arduino de forma correcta y totalmente funcional.
+						
+					\item Comunicación en red
+					
+						Se ha obtenido una comunicación sobre red para enviar instrucciones a Rasperry. Con esta comunicación abstraemos del cliente a utilizar, ya que teniendo una interfaz de red es posible comunicarse con el servicio.
+					
+				\end{itemize}
+			
+			\item Aprender a diseñar aplicaciones Android para el control de dispositivos
+			
+				La aplicación Android desarrollada está orientada al control del coche mediante una conexión de red. Se ha implementado de forma correcta y funcional.
+	\end{itemize}
+	
+	
 
 \cdpchapter{Trabajo futuro}
 
@@ -1093,16 +1280,26 @@ A continuación detallaremos una planificación financiera a posteriori:
 	
 	\item Vídeos de prueba
 		\begin{itemize}
-			\item Primer vídeo de prueba con la aplicación:
+			\item Vídeo de presentación del TFG:
 				\begin{figure}[H]
 					\centering
-					\includegraphics[width=1\textwidth]{img/capturaPrimerVideoApp}
-					\caption{Captura del vídeo de prueba con la aplicación}
-					\label{fig:capturaPrimerVideoApp}
+					\includegraphics[width=1\textwidth]{img/videoPresentacion}
+					\caption{Captura del vídeo de presentación del TFG}
+					\label{fig:capturaVideoPresentacion}
 				\end{figure}
 		
-				 Vídeo: \url{https://youtu.be/g_npEDxkSyo}
+				 Vídeo: \url{https://youtu.be/bXjR2uDmAJU}
 				 \clearpage
+				 
+				 \item Primer vídeo de prueba con la aplicación:
+				 \begin{figure}[H]
+				 	\centering
+				 	\includegraphics[width=1\textwidth]{img/capturaPrimerVideoApp}
+				 	\caption{Captura del vídeo de prueba con la aplicación}
+				 	\label{fig:capturaPrimerVideoApp}
+				 \end{figure}
+				 
+				 Vídeo: \url{https://youtu.be/g_npEDxkSyo}
 				 
 				 \item Vídeo de prueba de la detección de personas:
 				 
@@ -1115,7 +1312,7 @@ A continuación detallaremos una planificación financiera a posteriori:
 				 
 				 Vídeo: \url{https://youtu.be/ZAHWm1gdG3w}
 				 
-				
+				\clearpage
 				\item Vídeo de prueba de los LEDs y tiempo de arranque:
 				
 				\begin{figure}[H]

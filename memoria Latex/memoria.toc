@@ -1,6 +1,7 @@
 \select@language {spanish}
 \contentsline {chapter}{\'{I}ndice general}{IV}
 \contentsline {chapter}{\'{I}ndice de figuras}{VI}
+\contentsline {chapter}{{\'I}ndice de cuadros}{IX}
 \contentsline {chapter}{\numberline {1}BLOQUE 1: DESCRIPCI\IeC {\'O}N DEL PROYECTO}{1}
 \contentsline {section}{\numberline {1.1}Introducci\IeC {\'o}n y motivaci\IeC {\'o}n}{1}
 \contentsline {section}{\numberline {1.2}Objetivos del proyecto}{6}
@@ -10,15 +11,15 @@
 \contentsline {section}{\numberline {2.1}Dise\IeC {\~n}o del sistema}{12}
 \contentsline {section}{\numberline {2.2}Implementaci\IeC {\'o}n}{13}
 \contentsline {subsection}{\numberline {2.2.1}Tecnolog\IeC {\'\i }as empleadas}{13}
-\contentsline {subsection}{\numberline {2.2.2}Desarrollo}{15}
-\contentsline {section}{\numberline {2.3}Pruebas del sistema}{37}
-\contentsline {chapter}{\numberline {3}BLOQUE 3: PLANIFICACI\IeC {\'O}N DEL PROYECTO}{44}
-\contentsline {section}{\numberline {3.1}Planificaci\IeC {\'o}n temporal inicial}{44}
-\contentsline {section}{\numberline {3.2}Planificaci\IeC {\'o}n financiera inicial}{47}
-\contentsline {section}{\numberline {3.3}Planificaci\IeC {\'o}n temporal final (real)}{48}
-\contentsline {section}{\numberline {3.4}Planificaci\IeC {\'o}n financiera final (real)}{53}
-\contentsline {section}{\numberline {3.5}Estudio de mercado}{54}
-\contentsline {subsection}{\numberline {3.5.1}Clientes potenciales}{54}
-\contentsline {subsection}{\numberline {3.5.2}Plan de comercializaci\IeC {\'o}n}{54}
-\contentsline {section}{Referencias}{58}
+\contentsline {subsection}{\numberline {2.2.2}Desarrollo}{16}
+\contentsline {section}{\numberline {2.3}Pruebas del sistema}{39}
+\contentsline {chapter}{\numberline {3}BLOQUE 3: PLANIFICACI\IeC {\'O}N DEL PROYECTO}{46}
+\contentsline {section}{\numberline {3.1}Planificaci\IeC {\'o}n temporal inicial}{46}
+\contentsline {section}{\numberline {3.2}Planificaci\IeC {\'o}n financiera inicial}{49}
+\contentsline {section}{\numberline {3.3}Planificaci\IeC {\'o}n temporal final (real)}{50}
+\contentsline {section}{\numberline {3.4}Planificaci\IeC {\'o}n financiera final (real)}{55}
+\contentsline {section}{\numberline {3.5}Estudio de mercado}{56}
+\contentsline {subsection}{\numberline {3.5.1}Clientes potenciales}{56}
+\contentsline {subsection}{\numberline {3.5.2}Plan de comercializaci\IeC {\'o}n}{56}
+\contentsline {section}{Referencias}{61}
 \contentsfinish 
